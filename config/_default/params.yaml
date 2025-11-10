@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: indigo
+  color: blue
 
 # SEO
 marketing:
@@ -31,11 +31,12 @@ header:
   navbar:
     enable: true
     block: 'navbar'
+    align: left
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
-      text: 'Your Name'
+      text: 'Matteo Sissa'
 
 # Site footer
 footer:
