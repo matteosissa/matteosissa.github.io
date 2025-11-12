@@ -21,7 +21,16 @@
   <div class="grid grid-cols-1 lg:grid-cols-2 items-start" style="gap: 1rem;">
     
     {{/* LEFT COLUMN: SKILLS */}}
-    <div class="flex flex-col items-center" style="padding-left: 20%; padding-right: 5%;">
+    <div class="flex flex-col items-center" style="padding-left: 0; padding-right: 0;">
+      <style>
+        @media (min-width: 1024px) {
+          .skills-column-padding {
+            padding-left: 20%;
+            padding-right: 5%;
+          }
+        }
+      </style>
+      <div class="skills-column-padding w-full">
       
       {{/* Skills Title */}}
       <div class="flex flex-col items-center mb-8">
@@ -32,7 +41,7 @@
 
       {{/* Skills Grid */}}
       {{ $columns := 1 }}
-      <div class="grid grid-cols-1 items-start gap-8 w-full" style="max-width: 400px;">
+      <div class="grid grid-cols-1 items-start gap-8 w-full mx-auto" style="max-width: 400px;">
         {{ range $skills }}
         {{ $color := .color | default "" }}
         {{ $color_border := .color_border | default "" }}
@@ -70,10 +79,20 @@
         </div>
         {{ end }}
       </div>
+      </div>{{/* Close skills-column-padding wrapper */}}
     </div>
 
     {{/* RIGHT COLUMN: LANGUAGES */}}
-    <div class="flex flex-col" style="padding-right: 20%; padding-left: 5%;">
+    <div class="flex flex-col" style="padding-left: 0; padding-right: 0;">
+      <style>
+        @media (min-width: 1024px) {
+          .languages-column-padding {
+            padding-right: 20%;
+            padding-left: 5%;
+          }
+        }
+      </style>
+      <div class="languages-column-padding w-full">
       
       {{/* Languages Title */}}
       <div class="flex flex-col items-center mb-8">
@@ -100,6 +119,7 @@
         </div>
         {{ end }}
       </div>
+      </div>{{/* Close languages-column-padding wrapper */}}
     </div>
 
   </div>
