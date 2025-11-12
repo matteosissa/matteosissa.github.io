@@ -8,15 +8,15 @@ main:
     url: /
     weight: 10
   - name: Experience
-    url: /#papers
+    url: /experience/
     weight: 20
-  - name: Education
-    url: /#talks
+  - name: Publications
+    url: /#papers
     weight: 30
-  - name: Projects
-    url: /#news
+  - name: Talks
+    url: /#talks
     weight: 40
-  - name: Contacts
-    url: experience/
+  - name: News
+    url: /#news
     weight: 50
 

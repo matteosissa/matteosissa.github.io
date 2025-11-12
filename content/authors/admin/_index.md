@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Alex Johnson
+title: Matteo Sissa
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Matteo
+last_name: Sissa
 
 # Pronouns (optional)
-pronouns: he/him
+pronouns: 
 
 # Status emoji
 status:
-  icon: 🚀
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,117 +23,126 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Software Engineer and Architect
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Politecnico di Milano
+    url: https://www.polimi.it/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
+    url: 'mailto:matteo.sissa29@gmail.com'
+    label: E-mail
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
+    url: https://github.com/matteosissa
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Software Architectures
+  - Software Patterns
+  - SCRUM
+  - Clean Architecture
+  - Java
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: Master's Degree in Computer Science and Engineering
+    institution: "Politecnico di Milano"
     icon: ""
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+    date_start: 01 Sep 2023
+    date_end: 23 Oct 2025
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+      Graduated with full marks and honours. Thesis on  _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervised by Prof. Matteo Camilli. The work was presented at SISTEDES, well-established software engineering conference in Spain.
     button:
       text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
-    icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+      url: '/uploads/masters-thesis.pdf'
+  - area: Exchange Semester 
+    institution: Universitat Politècnica de València, Spain
+    icon: "hero/globe-asia-australia"
+    date_start: 01 Feb 2025
+    date_end: 30 Jun 2025
     summary: |
-      GPA: 4.0/4.0
-
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
+      Specialised in some courses on mobile development and big data management and carried out part of my master's thesis research.
+  - area: Bachelor's Degree in Computer Science and Engineering
+    institution: Università degli studi di Modena e Reggio Emilia
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+    date_start: 01 Sep 2020
+    date_end: 17 Jul 2023
     summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
+      Graduated with full marks and honours. Thesis on  _Cross-compiling Java-FX projects on Android devices._ Supervised by Prof. Nicola Bicocchi.
+    button:
+      text: 'Read Thesis'
+      url: '/uploads/bachelors-thesis.pdf'
+  - area: Exchange Semester 
+    institution: University of Exeter, United Kingdom
+    icon: "hero/globe-asia-australia"
+    date_start: 01 Sep 2022
+    date_end: 30 Jan 2023
+    summary: |
+      Specialised in some courses software engineering and computer security.
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
-    icon: ''
-    date_start: 2020-01-01
-    date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
+  - position: Master's Thesis University Research
+    company_name: "Politecnico di Milano, 110 cum laude"
+    company_url: 'https://www.polimi.it/'
+    icon: 'hero/academic-cap'
+    date_start: 01 Feb 2025
+    date_end: 23 Oct 2025
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._
+  - position: Project on OPC UA Technology
+    company_name: ABB
+    company_url: 'https://www.abb.com/global/en'
+    icon: 'hero/briefcase'
+    date_start: 01 Sep 2024
+    date_end: '15 Jan 2025'
+    summary: |2-
+      Scrum-based project for a university course in collaboration with an external company, ABB. The team was distributed across three countries, counting a total of eight people. The objective was the extension of the OPC UA technology with a security layer for publish-subscribe communication.
+  - position: Bachelor's Thesis University Research
+    company_name: Università degli studi di Modena e Reggio Emilia, 110 cum laude
+    company_url: 'https://www.unimore.it/it'
+    icon: 'hero/academic-cap'
+    date_start: 01 Feb 2023
+    date_end: 23 Jul 2023
+    summary: |
+      _Cross-compiling Java-FX projects on Android devices._
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python & PyTorch
-        description: ''
-        percent: 95
+      - name: Java and Java Spring
+        description: 'Backend development and microservice architectures'
+        percent: 90
         icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
-        description: ''
+      - name: Docker and Kubernetes
+        description: 'Deployment of applications, CICD pipelines'
+        percent: 75
+        icon: server-stack
+      - name: Web Development
+        description: 'HTML, CSS, Javascript'
         percent: 85
-        icon: cloud
+        icon: wifi
+      - name: Android Development
+        description: 'Full-stack Android applications and Firebase integration'
+        percent: 85
+        icon: device-phone-mobile
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking in the Rockies
-        description: ''
-        percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
-        description: ''
+      - name: Learning Languages
+        description: 'English, Spanish'
+        percent: 85
+        icon: globe-europe-africa
+      - name: Training
+        description: 'Mostly weightlifting'
         percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
-        description: ''
-        percent: 70
-        icon: book-open
+        icon: sparkles
 
 languages:
   - name: English
@@ -169,4 +178,4 @@ awards:
       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+Matteo is a **Software Engineer** and recent graduate from **Politecnico di Milano**, where he completed his **Master's degree** with honours in 2025. His thesis introduced a novel approach to injecting behavioral variability points into microservice applications, and was presented at **SISTEDES**, Spain's premier conference on software engineering. He has also collaborated with **ABB** on a **SCRUM-based** project  designing security protocols for machine communication systems. He is passionate about **software architecture** and **design patterns**, focusing on building solutions that are easy to maintain, scale, and understand.
