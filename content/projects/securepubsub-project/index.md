@@ -1,6 +1,6 @@
 ---
-title: PyTorch
-date: 2023-10-26
+title: SecurePubSub Project
+date: 2024-01-15
 links:
   - type: site
     url: https://github.com/pytorch/pytorch
