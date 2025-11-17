@@ -115,11 +115,11 @@ work:
 skills:
   - name: Technical Skills
     items:
-      - name: Java and Java Spring
+      - name: Java - Java Spring
         description: 'Backend development and microservice architectures'
         percent: 90
         icon: code-bracket
-      - name: Docker and Kubernetes
+      - name: Docker - Kubernetes
         description: 'Deployment of applications, CICD pipelines'
         percent: 75
         icon: server-stack
@@ -131,6 +131,10 @@ skills:
         description: 'Full-stack Android applications and Firebase integration'
         percent: 85
         icon: device-phone-mobile
+      - name: Git - CICD pipelines
+        description: 'Project collaboration and deployment'
+        percent: 80
+        icon: arrow-path
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'

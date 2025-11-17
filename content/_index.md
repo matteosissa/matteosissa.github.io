@@ -30,6 +30,7 @@ sections:
         shape: circle # Options: circle (default), square, rounded
 
   - block: resume-work-education
+    id: experience
     content:
       username: admin
     design:
@@ -37,6 +38,7 @@ sections:
       is_education_first: false
 
   - block: resume-skills-languages
+    id: skills
     content:
       title: Skills & Expertise
       username: admin
@@ -54,6 +56,14 @@ sections:
     design:
       view: article-grid
       columns: 2
+
+  - block: resume-footer
+    content:
+      username: admin
+    design:
+      # No spacing above footer since it has its own padding
+      spacing:
+        padding: [0, 0, 0, 0]
 
 
   

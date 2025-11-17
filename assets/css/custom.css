@@ -1,0 +1,4 @@
+/* Hide default Hugo Blox footer wrapper since we're using custom footer block */
+.page-footer {
+  display: none !important;
+}

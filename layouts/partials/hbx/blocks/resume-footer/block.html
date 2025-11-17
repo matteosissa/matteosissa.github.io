@@ -1,0 +1,159 @@
+{{/* Hugo Blox: Resume Footer */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Get profile data */}}
+{{ $person := site.GetPage "authors/admin" }}
+{{ $person_data := $person.Params }}
+{{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+
+{{/* Add CSS to hide the default page footer */}}
+<style>
+.page-footer {
+  display: none !important;
+}
+</style>
+
+<footer class="bg-gray-900 text-gray-300">
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    
+    {{/* Main Footer Content - 3 Columns */}}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      
+      {{/* Column 1: About */}}
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">{{ $person_data.title }}</h3>
+        <p class="text-gray-400 mb-4">{{ $person_data.role }}</p>
+        
+        {{/* Bio from page content */}}
+        {{ with $person.Content }}
+        <div class="text-gray-400 text-sm mb-4 prose prose-invert max-w-none">
+          {{ . | truncate 280 }}
+        </div>
+        {{ end }}
+        
+        {{/* Social Links */}}
+        {{ with $person_data.profiles }}
+        <div class="flex gap-4 mt-4">
+          {{ range . }}
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors" aria-label="{{ .label }}">
+            {{ partial "functions/get_icon" (dict "name" .icon "attributes" "class=\"h-6 w-6\"") }}
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      
+      {{/* Column 2: Quick Links */}}
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+          <li><a href="#experience" class="text-gray-400 hover:text-white transition-colors">Experience</a></li>
+          <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+          <li><a href="#publications" class="text-gray-400 hover:text-white transition-colors">Publications</a></li>
+          <li><a href="/uploads/cv.pdf" class="text-gray-400 hover:text-white transition-colors">Download CV</a></li>
+        </ul>
+        
+        {{/* Interests */}}
+        {{ with $person_data.interests }}
+        <div class="mt-6">
+          <h4 class="text-white font-semibold mb-2">Interests</h4>
+          <div class="flex flex-wrap gap-2">
+            {{ range . }}
+            <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      
+      {{/* Column 3: Contact & Education */}}
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
+        
+        {{/* Email */}}
+        {{ range $person_data.profiles }}
+          {{ if eq .icon "at-symbol" }}
+          <div class="flex items-start gap-2 mb-3">
+            {{ partial "functions/get_icon" (dict "name" "at-symbol" "attributes" "class=\"h-5 w-5 text-gray-400 mt-0.5\"") }}
+            <a href="{{ .url }}" class="text-gray-400 hover:text-white transition-colors break-all">
+              {{ strings.TrimPrefix "mailto:" .url }}
+            </a>
+          </div>
+          {{ end }}
+        {{ end }}
+        
+        {{/* Location (if you want to add it) */}}
+        <div class="flex items-start gap-2 mb-3">
+          {{ partial "functions/get_icon" (dict "name" "map-pin" "attributes" "class=\"h-5 w-5 text-gray-400 mt-0.5\"") }}
+          <span class="text-gray-400">Milan, Italy</span>
+        </div>
+        
+        {{/* Latest Education */}}
+        {{ with $person_data.education }}
+        <div class="mt-6">
+          <h4 class="text-white font-semibold mb-2">Education</h4>
+          {{ $latest := index . 0 }}
+          <div class="text-sm">
+            <p class="text-gray-300">{{ $latest.area }}</p>
+            <p class="text-gray-400">{{ $latest.institution }}</p>
+          </div>
+        </div>
+        {{ end }}
+        
+        {{/* Languages */}}
+        {{ with $person_data.languages }}
+        <div class="mt-6">
+          <h4 class="text-white font-semibold mb-2">Languages</h4>
+          <div class="space-y-1">
+            {{ range . }}
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-400">{{ .name }}</span>
+              <span class="text-gray-500">{{ .percent }}%</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      
+    </div>
+    
+    {{/* Divider */}}
+    <div class="border-t border-gray-800 pt-8">
+      
+      {{/* Bottom Row: Copyright */}}
+      <div class="text-center text-gray-500 text-sm">
+        <p>
+          © {{ now.Year }} {{ $person_data.title }}. 
+          Built with <a href="https://hugoblox.com" target="_blank" class="text-gray-400 hover:text-white">Hugo Blox</a>
+          {{ with site.Params.footer.copyright.notice }}
+          {{ $license_text := "" }}
+          {{ if site.Params.footer.copyright.license.enable }}
+            {{ $license_link := "https://creativecommons.org/licenses/" }}
+            {{ $license_text = "CC" }}
+            {{ if site.Params.footer.copyright.license.allow_derivatives }}
+              {{ $license_text = printf "%s %s" $license_text "BY" }}
+            {{ else }}
+              {{ $license_text = printf "%s %s" $license_text "BY-ND" }}
+            {{ end }}
+            {{ if site.Params.footer.copyright.license.share_alike }}
+              {{ $license_text = printf "%s-%s" $license_text "SA" }}
+            {{ end }}
+            {{ if not site.Params.footer.copyright.license.allow_commercial }}
+              {{ $license_text = printf "%s-%s" $license_text "NC" }}
+            {{ end }}
+            {{ $license_link = printf "%s%s/4.0/" $license_link (lower $license_text) }}
+            {{ $license_text = printf "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">%s 4.0</a>" $license_link $license_text | safeHTML }}
+          {{ end }}
+          <span class="mx-2">·</span>
+          {{ replace (replace . "{year}" (now.Year | string)) "{license}" $license_text | markdownify | emojify }}
+          {{ end }}
+        </p>
+      </div>
+      
+    </div>
+    
+  </div>
+</footer>
