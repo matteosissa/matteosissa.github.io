@@ -1,0 +1,32 @@
+# Social sharing links configuration
+# These links would appear in the blog pages under the text (at the end)
+# Customized for professional CV/portfolio site
+# Docs: https://docs.hugoblox.com/reference/page-sharer/
+
+links:
+  - id: email
+    url: 'mailto:?subject={title}&body={url}'
+    title: Email
+    icon: hero/at-symbol
+    enable: false
+  - id: linkedin
+    url: 'https://www.linkedin.com/shareArticle?url={url}&title={title}'
+    title: LinkedIn
+    icon: brands/linkedin
+    enable: false
+  - id: x
+    url: 'https://twitter.com/intent/tweet?url={url}&text={title}'
+    title: X
+    icon: brands/x
+    enable: false
+  # Disabled - too casual for professional CV site
+  - id: facebook
+    url: 'https://www.facebook.com/sharer.php?u={url}&t={title}'
+    title: Facebook
+    icon: brands/facebook
+    enable: false
+  - id: whatsapp
+    url: 'whatsapp://send?text={title}%20{url}'
+    title: WhatsApp
+    icon: brands/whatsapp
+    enable: false

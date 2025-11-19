@@ -67,7 +67,7 @@ education:
     summary: |
       Specialised in some courses on mobile development and big data management and carried out part of my master's thesis research.
   - area: Bachelor's Degree in Computer Science and Engineering
-    institution: Università degli studi di Modena e Reggio Emilia
+    institution: Università di Modena e Reggio Emilia
     icon: "hero/academic-cap"
     date_start: 01 Sep 2020
     date_end: 17 Jul 2023
