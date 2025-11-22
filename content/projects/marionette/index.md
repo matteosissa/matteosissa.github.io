@@ -45,7 +45,7 @@ The Marionette framework comprises two main components that work together:
 - Automatic discovery of all cluster nodes with defined variation points
 - An automated A/B/n testing pipeline for comparing behavioral combinations across services and evaluating their performance impact (Docker, Kubernetes, Prometheus)
 
-### Results & Skills Acquired
+### Results and Skills Acquired
 
 This project turned out to be challenging because it involved several technologies and it covered many aspects of software development, from **full stack application design** (backend and frontend) to **operational concerns** (deployment, orchestration, networking, CICD pipelines).
 It allowed me to further explore the development of **microservice-based architectures** and the **deployment** and **orchestration** concerns related to this architectural style (Docker, Kubernetes). It was also important for me to get hands-on practice on **monitoring tools** like Prometheus and automate the process of comparison between system configurations to extract relevant data for decision-making.
