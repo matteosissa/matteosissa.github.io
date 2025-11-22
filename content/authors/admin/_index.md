@@ -56,9 +56,6 @@ education:
     date_end: 23 Oct 2025
     summary: |
       Graduated with full marks and honours. Thesis on  _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervised by Prof. Matteo Camilli. The work was presented at SISTEDES, well-established software engineering conference in Spain.
-    button:
-      text: 'Read Thesis'
-      url: '/uploads/masters-thesis.pdf'
   - area: Exchange Semester 
     institution: Universitat Politècnica de València, Spain
     icon: "hero/globe-asia-australia"
@@ -73,9 +70,7 @@ education:
     date_end: 17 Jul 2023
     summary: |
       Graduated with full marks and honours. Thesis on  _Cross-compiling Java-FX projects on Android devices._ Supervised by Prof. Nicola Bicocchi.
-    button:
-      text: 'Read Thesis'
-      url: '/uploads/bachelors-thesis.pdf'
+
   - area: Exchange Semester 
     institution: University of Exeter, United Kingdom
     icon: "hero/globe-asia-australia"
@@ -93,6 +88,13 @@ work:
     date_end: 23 Oct 2025
     summary: |
       _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._
+    buttons:
+      - text: Read Thesis
+        url: 'uploads/masters-thesis/masters-thesis.pdf'
+        icon: 'arrow-down-tray'
+      - text: View Presentation
+        url: 'uploads/masters-thesis/masters-thesis-presentation.pptx'
+        icon: 'presentation-chart-bar'
   - position: Project on OPC UA Technology
     company_name: ABB
     company_url: 'https://www.abb.com/global/en'
@@ -101,6 +103,16 @@ work:
     date_end: '15 Jan 2025'
     summary: |2-
       Scrum-based project for a university course in collaboration with an external company, ABB. The team was distributed across three countries, counting a total of eight people. The objective was the extension of the OPC UA technology with a security layer for publish-subscribe communication.
+    buttons:
+      - text: ABB Proposal
+        url: 'uploads/abb-opc-ua/project-proposal.pdf'
+        icon: 'presentation-chart-bar'
+      - text: Requirements Doc
+        url: 'uploads/abb-opc-ua/requirements-definition-document.pdf'
+        icon: 'arrow-down-tray'
+      - text: Final Presentation
+        url: 'uploads/abb-opc-ua/final-presentation.pptx'
+        icon: 'presentation-chart-bar'
   - position: Bachelor's Thesis University Research
     company_name: Università degli studi di Modena e Reggio Emilia, 110 cum laude
     company_url: 'https://www.unimore.it/it'
@@ -109,6 +121,13 @@ work:
     date_end: 23 Jul 2023
     summary: |
       _Cross-compiling Java-FX projects on Android devices._
+    buttons:
+      - text: Read Thesis
+        url: 'uploads/bachelors-thesis/bachelors-thesis.pdf'
+        icon: 'arrow-down-tray'
+      - text: View Presentation
+        url: 'uploads/bachelors-thesis/bachelors-thesis-presentation.pdf'
+        icon: 'presentation-chart-bar'
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`

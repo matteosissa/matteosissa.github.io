@@ -3,8 +3,14 @@ title: Marionette
 date: 2025-10-23
 links:
   - icon: brands/github
-    name: View Source Code
-    url: https://github.com/pandas-dev/pandas
+    name: Replication Package
+    url: https://github.com/matteosissa/MarionetteReplicationPackage
+  - icon: brands/github
+    name: Marionettist 
+    url: https://github.com/matteosissa/Marionettist  
+  - icon: brands/github
+    name: Marionette Tool
+    url: https://github.com/matteosissa/MarionetteTool
 summary: Master's thesis project focusing on developing a framework to inject behavioural variability points in the codebase of a microservice-based application.
 
 
@@ -21,7 +27,7 @@ authors:
 
 The Marionette project was developed as my **master's thesis project** at **Politecnico di Milano** and it was designed in collaboration with the **Universitat Politècnica de València**, where I spent some months as an exchange student.
 
-### Objective
+### 🎯 Project Goal
 
 Marionette aims to fill a gap in the current research landscape for microservice-based systems, which is the possibility to make the software **change in behaviour** and **adapt** without any need for code recompilation or redeployment. It also aims to **automate the comparison** of different behavioural variants based on custom metrics.
 
