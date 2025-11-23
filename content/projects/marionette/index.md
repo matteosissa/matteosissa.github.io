@@ -43,13 +43,13 @@ The implementation is in **Java** and it leverages a stack of various technologi
 
 The Marionette framework comprises two main components that work together:
 
-**The Marionette Tool** - A source code transformation tool that enables developers to define behavioral variations for any method in the codebase (Java - JavaParser).
+**The Marionette Tool** - A source code transformation tool that enables developers to define behavioural variations for any method in the codebase (Java - JavaParser).
 
-**The Marionettist** - A central behavioral management service providing:
+**The Marionettist** - A central behavioural management service providing:
 
-- A simplified graphical interface (React) for switching between predefined behaviors at runtime without recompilation
-- Automatic discovery of all cluster nodes with defined variation points
-- An automated A/B/n testing pipeline for comparing behavioral combinations across services and evaluating their performance impact (Docker, Kubernetes, Prometheus)
+- A **simplified graphical interface** (React) for switching between predefined behaviours at runtime without recompilation.
+- **Automatic discovery** of all cluster nodes with defined variation points.
+- An **automated A/B/n testing pipeline** for comparing behavioural combinations across services and evaluating their performance impact (Docker, Kubernetes, Prometheus).
 
 ### 💯 Results and Skills Acquired
 

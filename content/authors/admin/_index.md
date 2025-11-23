@@ -82,7 +82,7 @@ education:
     date_start: 01 Sep 2022
     date_end: 30 Jan 2023
     summary: |
-      Specialised in some courses software engineering and computer security.
+      Specialised in some courses on software engineering and computer security.
 
 work:
   - position: Master's Thesis University Research
