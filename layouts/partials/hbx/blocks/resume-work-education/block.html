@@ -14,12 +14,12 @@
 {{end}}
 {{ $person := $person_page.Params }}
 
-{{/* Two-column layout container */}}
-<div class="max-w-7xl mx-auto px-6 md:px-0">
-  <div class="grid grid-cols-1 lg:grid-cols-2 items-start" style="gap: 1rem;">
+{{/* Two-column layout container: wider and more spaced columns; add vertical divider on large screens */}}
+<div class="max-w-6xl mx-auto px-6 md:px-0">
+  <div class="grid grid-cols-1 lg:grid-cols-2 items-start lg:divide-x lg:divide-gray-200 dark:lg:divide-gray-700" style="gap: 5rem;">
     
     {{/* LEFT COLUMN: WORK EXPERIENCE */}}
-    <div class="w-full" style="padding-left: 10%; padding-right: 5%;">
+  <div class="w-full" style="padding-left: 2%; padding-right: 6%;">
       {{ if $person.work }}
       <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white text-center">{{ i18n "experience" | default "Experience" }}</h3>
       <ol class="relative w-full border-s border-gray-200 dark:border-gray-700">
@@ -33,7 +33,11 @@
             {{end}}
           </span>
           <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{.position}}</h3>
+          {{ if .company_url }}
+          <a href="{{ .company_url }}" target="_blank" rel="noopener noreferrer" class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300 hover:underline">{{ .company_name }}</a>
+          {{ else }}
           <span class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">{{.company_name}}</span>
+          {{ end }}
           <time class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
             {{ if .date_start}}
               {{ (time .date_start) | time.Format ($block.design.date_format | default "January 2006") }} –
@@ -71,7 +75,7 @@
     </div>
 
     {{/* RIGHT COLUMN: EDUCATION */}}
-    <div class="w-full" style="padding-right: 10%; padding-left: 5%;">
+  <div class="w-full" style="padding-right: 2%; padding-left: 6%;">
       {{ if $person.education }}
       <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white text-center">{{ i18n "education" | default "Education" }}</h3>
       <ol class="relative w-full border-s border-gray-200 dark:border-gray-700">
@@ -86,8 +90,21 @@
               </svg>
             {{end}}
           </span>
-          <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{.area}}</h3>
-          <span class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">{{.institution}}</span>
+          <div class="flex items-start justify-between">
+            <div class="min-w-0">
+              <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white truncate">{{.area}}</h3>
+              {{ with .final_grade }}
+              <div class="mt-2 mb-3">
+                <span class="inline-flex items-center px-3 py-0.5 rounded-md text-sm font-medium text-gray-700 bg-gray-100 dark:bg-gray-800 dark:text-gray-300">{{ . }}</span>
+              </div>
+              {{ end }}
+              {{ if .institution_url }}
+              <a href="{{ .institution_url }}" target="_blank" rel="noopener noreferrer" class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300 hover:underline truncate">{{ .institution }}</a>
+              {{ else }}
+              <span class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300 truncate">{{.institution}}</span>
+              {{ end }}
+            </div>
+          </div>
           <time class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
             {{ if .date_start}}
               {{ (time .date_start) | time.Format ($block.design.date_format | default "January 2006") }} –

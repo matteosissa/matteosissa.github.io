@@ -50,29 +50,34 @@ interests:
 
 education:
   - area: Master's Degree in Computer Science and Engineering
-    institution: "Politecnico di Milano"
+    institution: "Politecnico di Milano, Italy"
+    institution_url: "https://www.polimi.it/"
     icon: "hero/academic-cap"
     date_start: 01 Sep 2023
     date_end: 23 Oct 2025
+    final_grade: "110/110 cum laude"
     summary: |
       Graduated with full marks and honours. Thesis on  _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervised by Prof. Matteo Camilli. The work was presented at SISTEDES, well-established software engineering conference in Spain.
   - area: Exchange Semester 
     institution: Universitat Politècnica de València, Spain
+    institution_url: "https://www.upv.es/"
     icon: "hero/globe-asia-australia"
     date_start: 01 Feb 2025
     date_end: 30 Jun 2025
     summary: |
       Specialised in some courses on mobile development and big data management and carried out part of my master's thesis research.
   - area: Bachelor's Degree in Computer Science and Engineering
-    institution: Università di Modena e Reggio Emilia
+    institution: Università di Modena e Reggio Emilia, Italy
+    institution_url: "https://www.unimore.it/it"
     icon: "hero/academic-cap"
     date_start: 01 Sep 2020
     date_end: 17 Jul 2023
+    final_grade: "110/110 cum laude"
     summary: |
       Graduated with full marks and honours. Thesis on  _Cross-compiling Java-FX projects on Android devices._ Supervised by Prof. Nicola Bicocchi.
-
-  - area: Exchange Semester 
+  - area: Exchange Semester
     institution: University of Exeter, United Kingdom
+    institution_url: "https://www.exeter.ac.uk/"
     icon: "hero/globe-asia-australia"
     date_start: 01 Sep 2022
     date_end: 30 Jan 2023
@@ -81,13 +86,13 @@ education:
 
 work:
   - position: Master's Thesis University Research
-    company_name: "Politecnico di Milano, 110 cum laude"
+    company_name: "Politecnico di Milano"
     company_url: 'https://www.polimi.it/'
     icon: 'hero/academic-cap'
     date_start: 01 Feb 2025
     date_end: 23 Oct 2025
     summary: |
-      _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._
+      Thesis Title: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._"
     buttons:
       - text: Read Thesis
         url: 'uploads/masters-thesis/masters-thesis.pdf'
@@ -95,14 +100,14 @@ work:
       - text: View Presentation
         url: 'uploads/masters-thesis/masters-thesis-presentation.pptx'
         icon: 'presentation-chart-bar'
-  - position: Project on OPC UA Technology
+  - position: Software Developer, SecurePubSub Project
     company_name: ABB
     company_url: 'https://www.abb.com/global/en'
     icon: 'hero/briefcase'
     date_start: 01 Sep 2024
     date_end: '15 Jan 2025'
     summary: |2-
-      Scrum-based project for a university course in collaboration with an external company, ABB. The team was distributed across three countries, counting a total of eight people. The objective was the extension of the OPC UA technology with a security layer for publish-subscribe communication.
+      Scrum-based project for a university-supported collaboration with an external company, ABB. The team was distributed across two countries, counting a total of eight people. The objective was the extension of the OPC UA technology with a security layer for publish-subscribe communication.
     buttons:
       - text: ABB Proposal
         url: 'uploads/abb-opc-ua/project-proposal.pdf'
@@ -114,13 +119,13 @@ work:
         url: 'uploads/abb-opc-ua/final-presentation.pptx'
         icon: 'presentation-chart-bar'
   - position: Bachelor's Thesis University Research
-    company_name: Università degli studi di Modena e Reggio Emilia, 110 cum laude
+    company_name: Università degli studi di Modena e Reggio Emilia
     company_url: 'https://www.unimore.it/it'
     icon: 'hero/academic-cap'
     date_start: 01 Feb 2023
     date_end: 23 Jul 2023
     summary: |
-      _Cross-compiling Java-FX projects on Android devices._
+      Thesis Title: "_Cross-compiling Java-FX projects on Android devices._"
     buttons:
       - text: Read Thesis
         url: 'uploads/bachelors-thesis/bachelors-thesis.pdf'
