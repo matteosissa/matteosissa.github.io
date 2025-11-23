@@ -3,6 +3,26 @@
   display: none !important;
 }
 
+/* Reduce avatar/profile image size on mobile */
+@media (max-width: 950px) {
+  .avatar-wrapper {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  
+  /* Ensure the image inside maintains proper dimensions */
+  .avatar-wrapper img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+  }
+  
+  /* Reduce spacing between header components (avatar, social icons, etc.) */
+  .resume-biography .md\:col-span-4.flex.flex-col {
+    gap: 2rem !important;
+  }
+}
+
 /* Fix project page navigation buttons on mobile - keep them on same line */
 /* Only apply on mobile/small screens, let medium+ screens use default behavior */
 @media (max-width: 767px) {
