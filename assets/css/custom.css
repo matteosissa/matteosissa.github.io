@@ -2,3 +2,26 @@
 .page-footer {
   display: none !important;
 }
+
+/* Fix project page navigation buttons on mobile - keep them on same line */
+/* Only apply on mobile/small screens, let medium+ screens use default behavior */
+@media (max-width: 767px) {
+  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+
+  /* Ensure navigation links have proper spacing on mobile */
+  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between > div {
+    flex: 0 1 auto;
+    max-width: 48%;
+  }
+
+  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between > div:first-child {
+    text-align: left;
+  }
+
+  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between > div:last-child {
+    text-align: right;
+  }
+}

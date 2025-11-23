@@ -16,7 +16,17 @@
 
 {{/* Two-column layout container: wider and more spaced columns; add vertical divider on large screens */}}
 <div class="max-w-6xl mx-auto px-6 md:px-0">
-  <div class="grid grid-cols-1 lg:grid-cols-2 items-start" style="gap: 5rem;">
+  <style>
+    .work-education-grid {
+      gap: 2.5rem; /* Mobile: smaller gap for vertical stack */
+    }
+    @media (min-width: 1024px) {
+      .work-education-grid {
+        gap: 5rem; /* Desktop: larger gap for side-by-side */
+      }
+    }
+  </style>
+  <div class="grid grid-cols-1 lg:grid-cols-2 items-start work-education-grid">
     
     {{/* LEFT COLUMN: WORK EXPERIENCE */}}
   <div class="w-full" style="padding-left: 2%; padding-right: 6%;">
