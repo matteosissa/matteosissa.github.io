@@ -3,6 +3,20 @@
   display: none !important;
 }
 
+/* Reduce site title/name font size in header on narrow mobile screens */
+@media (max-width: 640px) {
+  .navbar-brand {
+    font-size: 1.125rem !important; /* Reduced from default (18px) */
+  }
+}
+
+/* Further reduce on very narrow screens (e.g., iPhone SE) */
+@media (max-width: 375px) {
+  .navbar-brand {
+    font-size: 1rem !important; /* Even smaller for very narrow screens (16px) */
+  }
+}
+
 /* Reduce avatar/profile image size on mobile */
 @media (max-width: 950px) {
   .avatar-wrapper {
