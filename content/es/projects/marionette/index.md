@@ -17,7 +17,7 @@ links:
 summary: 
 Marionette es un framework para inyectar configuración de comportamiento en tiempo de ejecución en aplicaciones de microservicios para pruebas A/B/n.
 image:
-  focal_point: Top
+  focal_point: Bottom
 tags:
   - Java
   - Spring Boot

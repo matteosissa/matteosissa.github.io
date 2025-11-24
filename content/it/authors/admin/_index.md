@@ -112,7 +112,7 @@ work:
       - text: Proposta ABB
         url: 'uploads/abb-opc-ua/project-proposal.pdf'
         icon: 'presentation-chart-bar'
-      - text: Doc. Requisiti
+      - text: Requirements Doc
         url: 'uploads/abb-opc-ua/requirements-definition-document.pdf'
         icon: 'arrow-down-tray'
       - text: Presentazione Finale
