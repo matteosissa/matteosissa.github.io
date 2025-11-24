@@ -3,6 +3,12 @@
   display: none !important;
 }
 
+/* Make navbar logo/image circular to avoid white corners in dark mode */
+.navbar-brand img {
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+
 /* Reduce site title/name font size in header on narrow mobile screens */
 @media (max-width: 640px) {
   .navbar-brand {
