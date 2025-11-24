@@ -1,0 +1,211 @@
+---
+# Display name
+title: Matteo Sissa
+
+# Name pronunciation (optional)
+name_pronunciation: ''
+
+# Full name (for SEO)
+first_name: Matteo
+last_name: Sissa
+
+# Pronouns (optional)
+pronouns: 
+
+# Status emoji
+status:
+  icon: 
+
+# Is this the primary user of the site?
+superuser: true
+
+# Highlight the author in author lists? (true/false)
+highlight_name: true
+
+# Role/position/tagline
+role: Ingegnere e Architetto Software
+
+# Organizations/Affiliations to display in Biography blox
+organizations:
+  - name: Politecnico di Milano
+    url: https://www.polimi.it/
+
+# Social network links
+# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+profiles:
+  - icon: at-symbol
+    url: 'mailto:matteo.sissa29@gmail.com'
+    label: E-mail
+  - icon: brands/github
+    url: https://github.com/matteosissa
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/alexjohnsonai/
+
+interests:
+  - Architetture Software
+  - Pattern Software
+  - SCRUM
+  - Clean Architecture
+  - Java
+
+education:
+  - area: Laurea Magistrale in Ingegneria Informatica
+    institution: "Politecnico di Milano, Italia"
+    institution_url: "https://www.polimi.it/"
+    icon: "hero/academic-cap"
+    date_start: 01 Sep 2023
+    date_end: 23 Oct 2025
+    final_grade: "110/110 e lode"
+    summary: |
+      Laureato con il massimo dei voti e la lode. Tesi su _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Relatore: Prof. Matteo Camilli. Il lavoro è stato presentato a SISTEDES, nota conferenza di ingegneria del software in Spagna.
+  - area: Semestre di Scambio
+    institution: Universitat Politècnica de València, Spagna
+    institution_url: "https://www.upv.es/"
+    icon: "hero/globe-asia-australia"
+    date_start: 01 Feb 2025
+    date_end: 30 Jun 2025
+    summary: |
+      Specializzazione in corsi di sviluppo mobile e gestione di big data e completamento parziale della ricerca per la tesi magistrale.
+  - area: Laurea Triennale in Ingegneria Informatica
+    institution: Università di Modena e Reggio Emilia, Italia
+    institution_url: "https://www.unimore.it/it"
+    icon: "hero/academic-cap"
+    date_start: 01 Sep 2020
+    date_end: 17 Jul 2023
+    final_grade: "110/110 e lode"
+    summary: |
+      Laureato con il massimo dei voti e la lode. Tesi su _Cross-compiling Java-FX projects on Android devices._ Relatore: Prof. Nicola Bicocchi.
+  - area: Semestre di Scambio
+    institution: University of Exeter, Regno Unito
+    institution_url: "https://www.exeter.ac.uk/"
+    icon: "hero/globe-asia-australia"
+    date_start: 01 Sep 2022
+    date_end: 30 Jan 2023
+    summary: |
+      Specializzazione in corsi di ingegneria del software e sicurezza informatica.
+
+work:
+  - position: Ricerca Universitaria - Tesi Magistrale
+    company_name: "Politecnico di Milano"
+    company_url: 'https://www.polimi.it/'
+    icon: 'hero/academic-cap'
+    date_start: 01 Feb 2025
+    date_end: 23 Oct 2025
+    summary: |
+      Titolo Tesi: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._"
+    buttons:
+      - text: Leggi Tesi
+        url: 'uploads/masters-thesis/masters-thesis.pdf'
+        icon: 'arrow-down-tray'
+      - text: Visualizza Presentazione
+        url: 'uploads/masters-thesis/masters-thesis-presentation.pptx'
+        icon: 'presentation-chart-bar'
+  - position: Sviluppatore Software, Progetto SecurePubSub
+    company_name: ABB
+    company_url: 'https://www.abb.com/global/en'
+    icon: 'hero/briefcase'
+    date_start: 01 Sep 2024
+    date_end: '15 Jan 2025'
+    summary: |2-
+      Progetto basato su Scrum per una collaborazione università-azienda con ABB. Il team era distribuito in due paesi, per un totale di otto persone. L'obiettivo era estendere la tecnologia OPC UA con un layer di sicurezza per la comunicazione publish-subscribe.
+    buttons:
+      - text: Proposta ABB
+        url: 'uploads/abb-opc-ua/project-proposal.pdf'
+        icon: 'presentation-chart-bar'
+      - text: Doc. Requisiti
+        url: 'uploads/abb-opc-ua/requirements-definition-document.pdf'
+        icon: 'arrow-down-tray'
+      - text: Presentazione Finale
+        url: 'uploads/abb-opc-ua/final-presentation.pptx'
+        icon: 'presentation-chart-bar'
+  - position: Ricerca Universitaria - Tesi Triennale
+    company_name: Università degli studi di Modena e Reggio Emilia
+    company_url: 'https://www.unimore.it/it'
+    icon: 'hero/academic-cap'
+    date_start: 01 Feb 2023
+    date_end: 23 Jul 2023
+    summary: |
+      Titolo Tesi: "_Cross-compiling Java-FX projects on Android devices._"
+    buttons:
+      - text: Leggi Tesi
+        url: 'uploads/bachelors-thesis/bachelors-thesis.pdf'
+        icon: 'arrow-down-tray'
+      - text: Visualizza Presentazione
+        url: 'uploads/bachelors-thesis/bachelors-thesis-presentation.pdf'
+        icon: 'presentation-chart-bar'
+
+# Skills
+# Add your own SVG icons to `assets/media/icons/`
+skills:
+  - name: Competenze Tecniche
+    items:
+      - name: Java - Java Spring
+        description: 'Sviluppo backend e architetture a microservizi'
+        percent: 90
+        icon: code-bracket
+      - name: Docker - Kubernetes
+        description: 'Deployment di applicazioni, pipeline CICD'
+        percent: 75
+        icon: server-stack
+      - name: Sviluppo Web
+        description: 'HTML, CSS, Javascript'
+        percent: 85
+        icon: wifi
+      - name: Sviluppo Android
+        description: 'Applicazioni Android full-stack e integrazione Firebase'
+        percent: 85
+        icon: device-phone-mobile
+      - name: Git - Pipeline CICD
+        description: 'Collaborazione e deployment di progetti'
+        percent: 80
+        icon: arrow-path
+  - name: Hobby
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Apprendimento Lingue
+        description: 'Inglese, Spagnolo'
+        percent: 85
+        icon: globe-europe-africa
+      - name: Allenamento
+        description: 'Principalmente sollevamento pesi'
+        percent: 90
+        icon: sparkles
+
+languages:
+  - name: Italiano
+    percent: 100
+  - name: Inglese
+    percent: 90
+  - name: Spagnolo
+    percent: 75
+
+# Awards.
+#   Add/remove as many awards below as you like.
+#   Only `title`, `awarder`, and `date` are required.
+#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+# awards:
+#   - title: Best Paper Award
+#     url: https://neurips.cc/
+#     date: '2022-12-01'
+#     awarder: NeurIPS
+#     icon: hero/trophy
+#     summary: |
+#       Awarded for groundbreaking work on efficient training of large models.
+#   - title: AI Innovation Grant
+#     url: https://www.nsf.gov/
+#     date: '2021-06-15'
+#     awarder: National Science Foundation
+#     icon: hero/currency-dollar
+#     summary: |
+#       $500,000 grant for research in ethical AI development.
+#   - title: Outstanding PhD Thesis
+#     url: https://www.stanford.edu/
+#     date: '2019-06-30'
+#     awarder: Stanford University
+#     icon: hero/academic-cap
+#     summary: |
+#       Recognized for contributions to scaling laws in deep learning.
+---
+
+Matteo is a **Software Engineer** and recent graduate from **Politecnico di Milano**, where he completed his **Master's degree** with honors in 2025. His thesis introduced a novel approach to injecting behavioral variability points into microservice applications, and was presented at **SISTEDES**, Spain's premier conference on software engineering. He has also collaborated with **ABB** on a **SCRUM-based** project  designing security protocols for machine communication systems. He specializes in **software architecture** and **design patterns**, focusing on building solutions that are easy to maintain, scale, and understand.

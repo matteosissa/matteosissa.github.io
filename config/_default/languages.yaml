@@ -2,21 +2,47 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Default language
+# English (default)
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  contentDir: content/en
+  languageName: English
+  weight: 1
+  title: Matteo Sissa
+  menu:
+    main:
+      - name: Home
+        url: /
+        weight: 10
+      - name: Experience
+        url: /#experience
+        weight: 20
+      - name: Skills
+        url: /#skills
+        weight: 30
+      - name: Projects
+        url: /#projects
+        weight: 40
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+# Italian
+it:
+  languageCode: it-it
+  contentDir: content/it
+  languageName: Italiano
+  weight: 2
+  title: Matteo Sissa
+  menu:
+    main:
+      - name: Home
+        url: /
+        weight: 10
+      - name: Esperienza
+        url: /#experience
+        weight: 20
+      - name: Competenze
+        url: /#skills
+        weight: 30
+      - name: Progetti
+        url: /#projects
+        weight: 40
+

@@ -3,17 +3,37 @@
   #     desired widget in your `content/home/` folder.
   #   The weight parameter defines the order that the links will appear in.
 
-main:
-  - name: Home
-    url: /
-    weight: 10
-  - name: Experience
-    url: /#experience
-    weight: 20
-  - name: Skills
-    url: /#skills
-    weight: 30
-  - name: Projects
-    url: /#projects
-    weight: 40
 
+#### NOTE: THIS WORKS FOR SINGLE LANGUAGE PAGES, FOR MULTILINGUAL PAGES USE languages.yaml
+
+# # English menu
+# en:
+#   main:
+#     - name: Home
+#       url: /
+#       weight: 10
+#     - name: Experience
+#       url: /#experience
+#       weight: 20
+#     - name: Skills
+#       url: /#skills
+#       weight: 30
+#     - name: Projects
+#       url: /#projects
+#       weight: 40
+
+# # Italian menu
+# it:
+#   main:
+#     - name: Home
+#       url: /
+#       weight: 10
+#     - name: Esperienza
+#       url: /#experience
+#       weight: 20
+#     - name: Competenze
+#       url: /#skills
+#       weight: 30
+#     - name: Progetti
+#       url: /#projects
+#       weight: 40
