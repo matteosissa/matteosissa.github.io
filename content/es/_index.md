@@ -42,7 +42,6 @@ sections:
   - block: resume-skills-languages
     id: skills
     content:
-      title: Competenze ed Expertise
       username: admin
     design:
       show_skill_percentage: true
@@ -50,7 +49,10 @@ sections:
   - block: collection
     id: projects
     content:
-      title: Progetti Rilevanti
+      title: Proyectos Destacados
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 0
+      # Filter on criteria
       filters:
         folders:
           - projects

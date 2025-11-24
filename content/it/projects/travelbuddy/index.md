@@ -45,7 +45,7 @@ TravelBuddy mira a connettere **viaggiatori** diretti verso una destinazione con
 
 ### 🏗️ Architettura dell'Applicazione
 
-È stato rigorosamente seguito uno **stile architetturale pulito** durante tutto lo sviluppo di questo progetto, che ha portato alla definizione di tre livelli:
+È stato rigorosamente seguito uno **stile architetturale clean** durante tutto lo sviluppo di questo progetto, che ha portato alla definizione di tre livelli:
 
 - **Entities**: classi fondamentali che definiscono il dominio dell'applicazione.
 - **Interface Adapters**: componenti dell'interfaccia grafica che intercettano le richieste degli utenti e manipolano i formati dei dati.

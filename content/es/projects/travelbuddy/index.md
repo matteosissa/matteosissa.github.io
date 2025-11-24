@@ -45,7 +45,7 @@ TravelBuddy tiene como objetivo conectar a **viajeros** que se dirigen a un dest
 
 ### 🏗️ Arquitectura de la Aplicación
 
-Se siguió rigurosamente un **estilo de arquitectura limpia** durante todo el desarrollo de este proyecto, lo que llevó a la definición de tres capas:
+Se siguió rigurosamente un **estilo de arquitectura clean** durante todo el desarrollo de este proyecto, lo que llevó a la definición de tres capas:
 
 - **Entities**: clases fundamentales que definen el dominio de la aplicación.
 - **Interface Adapters**: componentes de interfaz gráfica que interceptan solicitudes de usuario y manipulan formatos de datos.
