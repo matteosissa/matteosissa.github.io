@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Ingegnere e Architetto Software
+role: Ingeniero y Arquitecto de Software
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -42,142 +42,142 @@ profiles:
     url: https://www.linkedin.com/in/alexjohnsonai/
 
 interests:
-  - Architetture Software
-  - Pattern Software
+  - Arquitecturas de Software
+  - Patrones de Software
   - SCRUM
   - Clean Architecture
   - Java
 
 education:
-  - area: Laurea Magistrale in Ingegneria Informatica
+  - area: Máster en Ingeniería Informática
     institution: "Politecnico di Milano, Italia"
     institution_url: "https://www.polimi.it/"
     icon: "hero/academic-cap"
     date_start: 01 Sep 2023
     date_end: 23 Oct 2025
-    final_grade: "110/110 e lode"
+    final_grade: "110/110 con matrícula de honor"
     summary: |
-      Laureato con il massimo dei voti e la lode. Tesi su _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Relatore: Prof. Matteo Camilli. Il lavoro è stato presentato a SISTEDES, nota conferenza di ingegneria del software in Spagna.
-  - area: Semestre di Scambio
-    institution: Universitat Politècnica de València, Spagna
+      Graduado con las máximas calificaciones y matrícula de honor. Tesis sobre _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervisor: Prof. Matteo Camilli. El trabajo fue presentado en SISTEDES, una reconocida conferencia de ingeniería de software en España.
+  - area: Semestre de Intercambio
+    institution: Universitat Politècnica de València, España
     institution_url: "https://www.upv.es/"
     icon: "hero/globe-asia-australia"
     date_start: 01 Feb 2025
     date_end: 30 Jun 2025
     summary: |
-      Specializzazione in corsi di sviluppo mobile e gestione di big data e completamento parziale della ricerca per la tesi magistrale.
-  - area: Laurea Triennale in Ingegneria Informatica
-    institution: Università di Modena e Reggio Emilia, Italia
+      Especialización en cursos de desarrollo móvil y gestión de big data y finalización parcial de la investigación para la tesis de máster.
+  - area: Grado en Ingeniería Informática
+    institution: Universidad de Modena y Reggio Emilia, Italia
     institution_url: "https://www.unimore.it/it"
     icon: "hero/academic-cap"
     date_start: 01 Sep 2020
     date_end: 17 Jul 2023
-    final_grade: "110/110 e lode"
+    final_grade: "110/110 con matrícula de honor"
     summary: |
-      Laureato con il massimo dei voti e la lode. Tesi su _Cross-compiling Java-FX projects on Android devices._ Relatore: Prof. Nicola Bicocchi.
-  - area: Semestre di Scambio
-    institution: University of Exeter, Regno Unito
+      Graduado con las máximas calificaciones y matrícula de honor. Tesis sobre _Cross-compiling Java-FX projects on Android devices._ Supervisor: Prof. Nicola Bicocchi.
+  - area: Semestre de Intercambio
+    institution: University of Exeter, Reino Unido
     institution_url: "https://www.exeter.ac.uk/"
     icon: "hero/globe-asia-australia"
     date_start: 01 Sep 2022
     date_end: 30 Jan 2023
     summary: |
-      Specializzazione in corsi di ingegneria del software e sicurezza informatica.
+      Especialización en cursos de ingeniería de software y seguridad informática.
 
 work:
-  - position: Ricerca Universitaria - Tesi Magistrale
+  - position: Investigación Universitaria - Tesis de Máster
     company_name: "Politecnico di Milano"
     company_url: 'https://www.polimi.it/'
     icon: 'hero/academic-cap'
     date_start: 01 Feb 2025
     date_end: 23 Oct 2025
     summary: |
-      Titolo Tesi: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._"
+      Título de la Tesis: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._"
     buttons:
-      - text: Leggi Tesi
+      - text: Leer Tesis
         url: 'uploads/masters-thesis/masters-thesis.pdf'
         icon: 'arrow-down-tray'
-      - text: Visualizza Presentazione
+      - text: Ver Presentación
         url: 'uploads/masters-thesis/masters-thesis-presentation.pptx'
         icon: 'presentation-chart-bar'
-  - position: Sviluppatore Software, Progetto SecurePubSub
+  - position: Desarrollador de Software, Proyecto SecurePubSub
     company_name: ABB
     company_url: 'https://www.abb.com/global/en'
     icon: 'hero/briefcase'
     date_start: 01 Sep 2024
     date_end: '15 Jan 2025'
     summary: |2-
-      Progetto basato su Scrum per una collaborazione università-azienda con ABB. Il team era distribuito in due paesi, per un totale di otto persone. L'obiettivo era estendere la tecnologia OPC UA con un layer di sicurezza per la comunicazione publish-subscribe.
+      Proyecto basado en Scrum para una colaboración universidad-empresa con ABB. El equipo estaba distribuido en dos países, con un total de ocho personas. El objetivo era extender la tecnología OPC UA con una capa de seguridad para la comunicación publish-subscribe.
     buttons:
-      - text: Proposta ABB
+      - text: Propuesta ABB
         url: 'uploads/abb-opc-ua/project-proposal.pdf'
         icon: 'presentation-chart-bar'
-      - text: Doc. Requisiti
+      - text: Doc. Requisitos
         url: 'uploads/abb-opc-ua/requirements-definition-document.pdf'
         icon: 'arrow-down-tray'
-      - text: Presentazione Finale
+      - text: Presentación Final
         url: 'uploads/abb-opc-ua/final-presentation.pptx'
         icon: 'presentation-chart-bar'
-  - position: Ricerca Universitaria - Tesi Triennale
-    company_name: Università degli studi di Modena e Reggio Emilia
+  - position: Investigación Universitaria - Tesis de Grado
+    company_name: Universidad de Modena y Reggio Emilia
     company_url: 'https://www.unimore.it/it'
     icon: 'hero/academic-cap'
     date_start: 01 Feb 2023
     date_end: 23 Jul 2023
     summary: |
-      Titolo Tesi: "_Cross-compiling Java-FX projects on Android devices._"
+      Título de la Tesis: "_Cross-compiling Java-FX projects on Android devices._"
     buttons:
-      - text: Leggi Tesi
+      - text: Leer Tesis
         url: 'uploads/bachelors-thesis/bachelors-thesis.pdf'
         icon: 'arrow-down-tray'
-      - text: Visualizza Presentazione
+      - text: Ver Presentación
         url: 'uploads/bachelors-thesis/bachelors-thesis-presentation.pdf'
         icon: 'presentation-chart-bar'
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Competenze Tecniche
+  - name: Competencias Técnicas
     items:
       - name: Java - Java Spring
-        description: 'Sviluppo backend e architetture a microservizi'
+        description: 'Desarrollo backend y arquitecturas de microservicios'
         percent: 90
         icon: code-bracket
       - name: Docker - Kubernetes
-        description: 'Deployment di applicazioni, pipeline CICD'
+        description: 'Despliegue de aplicaciones, pipelines CICD'
         percent: 75
         icon: server-stack
-      - name: Sviluppo Web
+      - name: Desarrollo Web
         description: 'HTML, CSS, Javascript'
         percent: 85
         icon: wifi
-      - name: Sviluppo Android
-        description: 'Applicazioni Android full-stack e integrazione Firebase'
+      - name: Desarrollo Android
+        description: 'Aplicaciones Android full-stack e integración Firebase'
         percent: 85
         icon: device-phone-mobile
-      - name: Git - Pipeline CICD
-        description: 'Collaborazione e deployment di progetti'
+      - name: Git - Pipelines CICD
+        description: 'Colaboración y despliegue de proyectos'
         percent: 80
         icon: arrow-path
-  - name: Hobby
+  - name: Aficiones
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Apprendimento Lingue
-        description: 'Inglese, Spagnolo'
+      - name: Aprendizaje de Idiomas
+        description: 'Inglés, Español'
         percent: 85
         icon: globe-europe-africa
-      - name: Allenamento
-        description: 'Principalmente sollevamento pesi'
+      - name: Entrenamiento
+        description: 'Principalmente levantamiento de pesas'
         percent: 90
         icon: sparkles
 
 languages:
   - name: Italiano
     percent: 100
-  - name: Inglese
+  - name: Inglés
     percent: 90
-  - name: Spagnolo
+  - name: Español
     percent: 75
 
 # Awards.
@@ -208,4 +208,4 @@ languages:
 #       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Matteo è un **Ingegnere del Software** e laureato magistrale dal **Politecnico di Milano**, dove ha completato il suo **Master** con lode nel 2025. La sua tesi ha introdotto un approccio innovativo per iniettare punti di variabilità comportamentale in applicazioni microservizi, ed è stata presentata a **SISTEDES**, la conferenza principale della Spagna sull'ingegneria del software. Ha inoltre collaborato con **ABB** a un progetto **basato su SCRUM** per la progettazione di protocolli di sicurezza per sistemi di comunicazione tra macchine. Si specializza in **architettura del software** e **design pattern**, focalizzandosi sulla costruzione di soluzioni facili da mantenere, scalare e comprendere.
+Matteo es un **Ingeniero de Software** y recién graduado del **Politecnico di Milano**, donde completó su **Máster** con matrícula de honor en 2025. Su tesis introdujo un enfoque novedoso para inyectar puntos de variabilidad de comportamiento en aplicaciones de microservicios, y fue presentada en **SISTEDES**, la conferencia más importante de ingeniería de software de España. También ha colaborado con **ABB** en un proyecto **basado en SCRUM** diseñando protocolos de seguridad para sistemas de comunicación entre máquinas. Se especializa en **arquitectura de software** y **patrones de diseño**, enfocándose en construir soluciones fáciles de mantener, escalar y comprender.

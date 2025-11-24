@@ -46,3 +46,25 @@ it:
         url: /#projects
         weight: 40
 
+# Spanish
+es:
+  languageCode: es-es
+  contentDir: content/es
+  languageName: Español
+  weight: 3
+  title: Matteo Sissa
+  menu:
+    main:
+      - name: Inicio
+        url: /
+        weight: 10
+      - name: Experiencia
+        url: /#experience
+        weight: 20
+      - name: Competencias
+        url: /#skills
+        weight: 30
+      - name: Proyectos
+        url: /#projects
+        weight: 40
+
