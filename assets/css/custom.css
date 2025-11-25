@@ -232,3 +232,25 @@
   opacity: 0.6;
 }
 
+/* Add horizontal padding to tag/taxonomy pages content */
+/* Target the container that holds project cards */
+body .container.max-w-\[65ch\] {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* Increase padding on larger screens */
+@media (min-width: 768px) {
+  body .container.max-w-\[65ch\] {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .container.max-w-\[65ch\] {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
