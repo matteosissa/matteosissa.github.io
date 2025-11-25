@@ -59,6 +59,11 @@
           <div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
             {{ .name | markdownify | emojify }}
             {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+            {{ if eq .name "Technical Skills" }}
+            <p class="text-xs text-gray-400 dark:text-gray-500 font-normal mt-1">
+              💡 Click on a skill to see related projects
+            </p>
+            {{ end }}
           </div>
           {{ range .items }}
           {{ $pack := or .icon_pack "fas" }}
