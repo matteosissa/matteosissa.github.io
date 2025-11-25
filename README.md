@@ -1,125 +1,155 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/theme-academic-cv)
+# Matteo Sissa - Academic CV Website
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
+This is a multilingual academic CV and portfolio website built with [Hugo](https://gohugo.io/) and [Hugo Blox](https://hugoblox.com/), featuring a modern design with Tailwind CSS. The website showcases my professional experience, education, projects, publications, and blog posts in three languages: English, Spanish, and Italian.
 
-<h1 align="center">Build an Academic CV and Resumé That Stands Out</h1>
+## 📁 Project Structure
 
-<p align="center">
-  <strong>Your unfair advantage in academia and tech.</strong><br/>
-  Showcase your work, boost your citations, and land your dream job at places like <strong>Meta, Google, and Stanford</strong>.
-</p>
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>🚀 Deploy Your Free CV in 60s</b></a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/?open=academic-cv&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>✨ Upgrade to Pro</b></a>
-</p>
-
-<p align="center">
-  Trusted by 250,000+ researchers, students, and educators worldwide.
-</p>
-
-<p align="center">
-  <a href="https://discord.gg/z8wNYzb">
-    <img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord">
-  </a>
-  <a href="https://github.com/HugoBlox/theme-academic-cv">
-    <img src="https://img.shields.io/github/stars/HugoBlox/theme-academic-cv?label=Star%20Academic%20CV&style=social" alt="GitHub Stars">
-  </a>
-</p>
-
----
-
-## Your Career Starts Here
-
-The Academic CV template is designed for impact. Whether you're an AI researcher, a recent graduate, or a seasoned professor, this is the last resumé you'll ever need.
-
-- **✍️ Showcase Your Expertise:** Easily write content with Markdown, Jupyter, or RStudio. Display your publications, talks, and projects in a stunning, professional layout.
-- **📈 Boost Your Citations:** Automatic BibTeX import and SEO-optimized pages mean your work gets discovered more easily, increasing your research impact.
-- **💼 Land Your Dream Job:** Create a memorable online presence that impresses recruiters from top tech firms and prestigious universities.
-- **🚀 Launch in Minutes:** No coding required. The Hugo Blox Builder lets you customize everything with drag-and-drop sections.
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme">
-    <img src="https://img.shields.io/badge/⚡️%20Get%20Your%20CV%20in%2060s-ff4655?style=for-the-badge" alt="Deploy this template" width="400">
-  </a>
-</p>
-
----
-
-## Level Up with Pro Templates
-
-Ready to take your career to the next level? Our Pro templates offer exclusive designs and features to help you stand out even more.
-
-<!-- <p align="center">
-  <img src="" alt="Free vs Pro templates">
-</p>-->
-
-| Feature              | Academic CV (Free)       | Academic CV Pro & Resumé Pro     |
-| -------------------- | ------------------------ | -------------------------------- |
-| **Design**           | Professional & clean     | **Exclusive premium designs**    |
-| **Layouts**          | Standard resumé sections | **Advanced layouts & timelines** |
-| **Call to Action**   | Simple contact link      | **Prominent CTA buttons**        |
-| **First Impression** | Strong                   | **Unforgettable**                |
-
-<br/>
-<p align="center">
-  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>💎 Get the Pro Pass</b></a> — Includes all Pro templates for a one-time price.<br/>
-  <a href="https://hugoblox.com/templates/academic-cv-pro/start?utm_source=github&utm_medium=readme">✨ Deploy Academic CV Pro</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/resume-pro/start?utm_source=github&utm_medium=readme">📄 Deploy Resumé Pro</a>
-</p>
-
----
-
-## What Researchers Say
-
-> “Hugo Blox saved me 40+ hours on my lab site. BibTeX integration auto-updates publications — **our citations are up 3×**.”
-> — **Dr. Sarah Yang**, AI Researcher
-
----
-
-## Get Started in Minutes
-
-### Recommended (Fastest)
-
-Deploy your site to GitHub Pages in just 60 seconds with our browser-based starter.
-
-👉 <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>Start with the Academic CV Template</b></a>
-
-### Prefer the Command Line?
-
-Use the local quickstart:
-
-```bash
-# 1. Install Hugo Extended → https://docs.hugoblox.com/getting-started/install-hugo/
-# 2. Clone this starter
-git clone https://github.com/HugoBlox/theme-academic-cv my-site
-cd my-site
-
-# 3. Run locally
-pnpm install && hugo server
+```
+CV_WEBSITE/
+├── config/              # Hugo configuration files
+│   └── _default/
+│       ├── hugo.yaml       # Main Hugo settings
+│       ├── languages.yaml  # Language configuration
+│       ├── menus.yaml      # Navigation menus
+│       ├── module.yaml     # Hugo modules
+│       └── params.yaml     # Site parameters
+├── content/             # Website content (multilingual)
+│   ├── en/             # English content
+│   ├── es/             # Spanish content
+│   └── it/             # Italian content
+│       ├── authors/    # Author profiles (main bio)
+│       ├── projects/   # Project showcases
+│       ├── publications/ # Research publications
+│       ├── blog/       # Blog posts
+│       ├── events/     # Events and talks
+│       └── courses/    # Courses taught
+├── assets/             # CSS, JS, and media files
+├── layouts/            # Custom Hugo templates
+├── static/             # Static files (uploads, etc.)
+└── public/             # Generated site (build output)
 ```
 
-For more guides, visit our documentation at **https://docs.hugoblox.com/**.
+## 🚀 Getting Started
 
----
+### Prerequisites
 
-## Join the Community
+- **Hugo Extended**: Version 0.152.2 or later ([Download](https://gohugo.io/installation/))
+- **Go**: Version 1.21.5 or later ([Download](https://go.dev/dl/))
+- **pnpm**: Version 10.14.0 or later ([Install](https://pnpm.io/installation))
+- **Node.js**: Version 22 or later ([Download](https://nodejs.org/))
 
-Join thousands of creators in our vibrant community to ask questions, share your work, and help us improve.
+### Installation
 
-- 💬 <a href="https://discord.gg/z8wNYzb">Discord</a>
-- 📚 <a href="https://docs.hugoblox.com/?utm_source=github&utm_medium=readme">Docs & Guides</a>
-- 🐦 <a href="https://x.com/BuildLore">X / Twitter</a>
-- ⭐ <a href="https://github.com/HugoBlox/hugo-blox-builder">Star on GitHub</a>
+1. **Clone the repository**:
 
----
+   ```bash
+   git clone https://github.com/matteosissa/matteosissa.github.io.git
+   cd CV_WEBSITE
+   ```
 
-MIT © 2016-Present [George Cushen](https://georgecushen.com)
+2. **Install dependencies**:
 
-<!--START_SECTION:news-->
-<!--Updated at 2025-11-09T02:00:26.352Z-->
-<!--END_SECTION:news-->
+   ```bash
+   pnpm install
+   ```
+
+3. **Run the development server**:
+
+   ```bash
+   pnpm dev
+   # or
+   hugo server --disableFastRender
+   ```
+
+4. **Open your browser** and navigate to:
+
+   ```
+   http://localhost:1313
+   ```
+
+The site will auto-reload when you make changes to the content or configuration.
+
+## 📝 Adding and Customizing Content
+
+### Editing Your Profile
+
+The main biography is located in:
+
+```
+content/{language}/authors/admin/_index.md
+```
+
+### Adding a Project
+
+1. Create a new folder in `content/{language}/projects/`:
+
+2. Create an `index.md` file, copying the markdown structure from other projects.
+
+3. (Optional) Add a featured image named `featured.jpg` or `featured.png` in the same folder.
+
+## 🎨 Customization
+
+### Changing Colors and Styles
+
+Edit `assets/css/custom.css` or `assets/scss/custom.scss` to customize the appearance:
+
+```css
+/* Example: Change primary color */
+:root {
+  --primary-color: #your-color;
+}
+```
+
+### Modifying Navigation Menus
+
+Edit `config/_default/menus.yaml` to add or remove menu items for each language.
+
+### Updating Site Parameters
+
+Edit `config/_default/params.yaml` to change:
+
+- SEO settings
+- Analytics configuration
+- Footer content
+- Social media sharing options
+
+### Advanced Customization
+
+For detailed information on overriding Hugo Blox templates and blocks, refer to the `CUSTOMIZATION_GUIDE.md` file in the repository.
+
+## 🏗️ Building for Production
+
+Build the static site:
+
+```bash
+pnpm build
+# or
+hugo --minify
+```
+
+The generated site will be in the `public/` directory.
+
+## 🚢 Deployment on Github Pages
+
+1. Build the site:
+   ```bash
+   hugo --minify
+   ```
+
+2. The `public/` folder contains your static site
+
+3. Push to the `gh-pages` branch or configure GitHub Actions for automatic deployment
+
+## 📚 Resources
+
+- [Hugo Documentation](https://gohugo.io/documentation/)
+- [Hugo Blox Documentation](https://hugoblox.com/docs/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Hugo Blox Blocks Reference](https://hugoblox.com/blocks/)
+
+## 📧 Contact
+
+**Matteo Sissa**
+
+- Email: matteo.sissa.2001@gmail.com
+
