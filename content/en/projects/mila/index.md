@@ -2,6 +2,9 @@
 title: MiLa
 date: 2024-07-17
 links:
+  - icon: arrow-top-right-on-square
+    name: Visit the Website
+    url: https://mila-website-frontend.vercel.app/
   - icon: brands/github
     name: View Source Code
     url: https://github.com/matteosissa/MiLA_Website
@@ -25,6 +28,8 @@ authors:
 ---
 
 MiLa is a web application designed for a volunteering association fighting against women's violence and abuse. It was developed using Nuxt, a Javascript framework built on top of VueJs.
+
+It is possible to visit the website at the following link: [MiLa Website](https://mila-website-frontend.vercel.app/).
 
 ### 🎯 Project Goal
 

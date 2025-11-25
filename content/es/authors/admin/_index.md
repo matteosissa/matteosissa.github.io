@@ -34,7 +34,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:matteo.sissa29@gmail.com'
+    url: 'mailto:matteo.sissa.2001@gmail.com'
     label: E-mail
   - icon: brands/github
     url: https://github.com/matteosissa
