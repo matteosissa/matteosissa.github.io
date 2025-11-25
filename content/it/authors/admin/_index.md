@@ -143,26 +143,27 @@ skills:
         description: 'Sviluppo backend e architetture a microservizi'
         percent: 90
         icon: code-bracket
-        url: '/tags/java-spring/'
+        url: '/tags/java/'
       - name: Docker - Kubernetes
-        description: 'Deployment di applicazioni, pipeline CICD'
+        description: 'Containerizzazione e orchestrazione di Microservizi'
         percent: 75
         icon: server-stack
         url: '/tags/kubernetes/'
       - name: Sviluppo Web
-        description: 'HTML, CSS, Javascript'
+        description: 'Design di frontend - HTML, CSS, Javascript'
         percent: 85
         icon: wifi
-        url: '/tags/javascript/'
+        url: '/tags/web/'
       - name: Sviluppo Android
         description: 'Applicazioni Android full-stack e integrazione Firebase'
         percent: 85
         icon: device-phone-mobile
         url: '/tags/android/'
-      - name: Git - Pipeline CICD
+      - name: Git - GitHub
         description: 'Collaborazione e deployment di progetti'
         percent: 80
         icon: arrow-path
+        url: '/tags/git/'
   - name: Hobby
     color: '#eeac02'
     color_border: '#f0bf23'

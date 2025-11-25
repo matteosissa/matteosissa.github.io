@@ -23,6 +23,8 @@ tags:
   - HTML
   - CSS
   - UI Design
+  - Git
+  - Web
 authors:
   - admin
 ---

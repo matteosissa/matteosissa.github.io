@@ -16,6 +16,8 @@ tags:
   - Kotlin
   - Android
   - Clean Architecture
+  - XML
+  - Git
 authors:
   - admin
 ---

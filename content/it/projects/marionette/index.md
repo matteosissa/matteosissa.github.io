@@ -24,10 +24,14 @@ image:
   focal_point: Bottom
 tags:
   - Java Spring
+  - Java
   - Microservices
   - Kubernetes
-  - Docker
+  - Javascript
   - Clean Architecture
+  - Git
+  - Docker
+  - Web
 authors:
   - admin
 ---

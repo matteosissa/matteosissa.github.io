@@ -145,23 +145,23 @@ skills:
         icon: code-bracket
         url: '/tags/java/'
       - name: Docker - Kubernetes
-        description: 'Deployment of applications, CICD pipelines'
+        description: 'Containerization and orchestration of Microservices'
         percent: 75
         icon: server-stack
         url: '/tags/kubernetes/'
       - name: Web Development
-        description: 'HTML, CSS, Javascript'
-        percent: 85
+        description: 'Frontend design - HTML, CSS, Javascript'
+        percent: 80
         icon: wifi
-        url: '/tags/javascript/'
+        url: '/tags/web/'
       - name: Android Development
         description: 'Full-stack Android applications and Firebase integration'
-        percent: 85
+        percent: 70
         icon: device-phone-mobile
         url: '/tags/android/'
-      - name: Git - CICD pipelines
+      - name: Git - GitHub
         description: 'Project collaboration and deployment'
-        percent: 80
+        percent: 85
         icon: arrow-path
         url: '/tags/git/'
   - name: Hobbies
