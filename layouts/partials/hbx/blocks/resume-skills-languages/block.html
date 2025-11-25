@@ -79,7 +79,7 @@
               {{ .name | markdownify | emojify }}
               {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
             </span>
-            {{ if .percent | and $show_show_skill_percentage }}
+            {{ if and .percent $show_show_skill_percentage (not $color) }}
             <div class="skills-wrapper" {{with $color_border}}{{ (printf "style=\"border-color: %s\"" .) | safeHTMLAttr }}{{end}}>
               <div class="skills-percent" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}{{end}}"></div>
             </div>

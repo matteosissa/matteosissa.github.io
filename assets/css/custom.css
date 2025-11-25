@@ -72,6 +72,15 @@
   gap: 0.5rem !important;
 }
 
+/* Center skills section titles on mobile */
+@media (max-width: 1023px) {
+  .skills-column-padding .flex.flex-col.items-center .text-3xl,
+  .languages-column-padding .flex.flex-col.items-center .text-3xl {
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
+
 /* Mobile Floating Menu Button - Only on mobile devices */
 @media (max-width: 1023px) {
   /* Make the label into a floating action button (FAB) in bottom-right corner */
