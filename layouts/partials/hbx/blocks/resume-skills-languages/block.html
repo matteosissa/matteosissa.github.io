@@ -69,16 +69,29 @@
 
           <div class="skills-content">
 
-            {{ with .icon }}
-            <span class="skills-icon inline-block">
-              {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em;\"")  }}
-            </span>
+            {{ if .url }}
+            <a href="{{ .url | relLangURL }}" class="skills-link-wrapper" style="display: inline-flex; align-items: flex-start; text-decoration: none; color: inherit; width: 100%;">
+              {{ with .icon }}
+              <span class="skills-icon inline-block">
+                {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em; margin-top: 0.25rem;\"")  }}
+              </span>
+              {{ end }}
+              <span class="skills-name text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                {{ .name | markdownify | emojify }}
+                {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
+              </span>
+            </a>
+            {{ else }}
+              {{ with .icon }}
+              <span class="skills-icon inline-block">
+                {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em; margin-top: 0.2rem;\"")  }}
+              </span>
+              {{ end }}
+              <span class="skills-name text-gray-700 dark:text-gray-300">
+                {{ .name | markdownify | emojify }}
+                {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
+              </span>
             {{ end }}
-
-            <span class="skills-name text-gray-700 dark:text-gray-300">
-              {{ .name | markdownify | emojify }}
-              {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
-            </span>
             {{ if and .percent $show_show_skill_percentage (not $color) }}
             <div class="skills-wrapper" {{with $color_border}}{{ (printf "style=\"border-color: %s\"" .) | safeHTMLAttr }}{{end}}>
               <div class="skills-percent" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}{{end}}"></div>

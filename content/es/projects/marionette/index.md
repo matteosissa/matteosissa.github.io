@@ -19,11 +19,11 @@ Marionette es un framework para inyectar configuración de comportamiento en tie
 image:
   focal_point: Bottom
 tags:
-  - Java
-  - Spring Boot
-  - Clean Architecture
+  - Java Spring
+  - Microservices
   - Kubernetes
   - Docker
+  - Clean Architecture
 authors:
   - admin
 ---

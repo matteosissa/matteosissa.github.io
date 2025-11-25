@@ -143,18 +143,22 @@ skills:
         description: 'Backend development and microservice architectures'
         percent: 90
         icon: code-bracket
+        url: '/tags/java-spring/'
       - name: Docker - Kubernetes
         description: 'Deployment of applications, CICD pipelines'
         percent: 75
         icon: server-stack
+        url: '/tags/kubernetes/'
       - name: Web Development
         description: 'HTML, CSS, Javascript'
         percent: 85
         icon: wifi
+        url: '/tags/javascript/'
       - name: Android Development
         description: 'Full-stack Android applications and Firebase integration'
         percent: 85
         icon: device-phone-mobile
+        url: '/tags/android/'
       - name: Git - CICD pipelines
         description: 'Project collaboration and deployment'
         percent: 80

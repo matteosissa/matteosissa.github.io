@@ -24,8 +24,9 @@ image:
   focal_point: Bottom
 tags:
   - Java Spring
-  - Microservizi
+  - Microservices
   - Kubernetes
+  - Docker
   - Clean Architecture
 authors:
   - admin
