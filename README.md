@@ -154,16 +154,29 @@ tags:
 
 3. **Keep tags consistent** across all language versions (EN, ES, IT) for the same project
 
+### Tag Naming Conventions
+
+**Important**: When a tag contains spaces, Hugo automatically converts it to a URL-friendly format:
+
+- Spaces become hyphens (`-`)
+- All characters are lowercase
+
+Examples:
+
+- Tag: `Java Spring` → URL: `/tags/java-spring/`
+- Tag: `Clean Architecture` → URL: `/tags/clean-architecture/`
+- Tag: `UI Design` → URL: `/tags/ui-design/`
+
 ### Best Practices
 
 - Use **English tag names** even in translated content (e.g., "Java Spring" instead of "Primavera de Java")
 - Tech terms are universally understood and keep content organized
-- The URL format is always `/tags/tag-name/` (lowercase, hyphenated)
 - Hugo automatically creates language-specific tag pages (`/en/tags/...`, `/es/tags/...`, `/it/tags/...`)
 
 ### Example
 
 When a user clicks on the "Android Development" skill:
+
 - English users → `/en/tags/android/` → Shows English projects tagged with "Android"
 - Spanish users → `/es/tags/android/` → Shows Spanish projects tagged with "Android"  
 - Italian users → `/it/tags/android/` → Shows Italian projects tagged with "Android"

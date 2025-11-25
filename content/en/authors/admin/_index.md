@@ -164,6 +164,12 @@ skills:
         percent: 85
         icon: arrow-path
         url: '/tags/git/'
+      - name: Agile Devevelopment - Jira
+        description: 'Agile software development, project management'
+        percent: 75
+        icon: calendar-days
+        url: '/tags/agile-development/'
+      
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
