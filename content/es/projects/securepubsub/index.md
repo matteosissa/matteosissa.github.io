@@ -18,6 +18,7 @@ image:
 tags:
   - C++
   - SCRUM
+  - Agile Development
   - ABB
   - Jira
   - OPC UA Protocol

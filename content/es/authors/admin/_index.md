@@ -164,8 +164,8 @@ skills:
         percent: 80
         icon: arrow-path
         url: '/tags/git/'
-      - name: Desarollo ágil - Jira
-        description: 'Desarollo software ágil, gestión de proyectos'
+      - name: Desarrollo ágil - Jira
+        description: 'Desarrollo software ágil, gestión de proyectos'
         percent: 75
         icon: calendar-days
         url: '/tags/agile-development/'

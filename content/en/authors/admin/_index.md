@@ -164,7 +164,7 @@ skills:
         percent: 85
         icon: arrow-path
         url: '/tags/git/'
-      - name: Agile Devevelopment - Jira
+      - name: Agile Development - Jira
         description: 'Agile software development, project management'
         percent: 75
         icon: calendar-days

@@ -164,6 +164,11 @@ skills:
         percent: 80
         icon: arrow-path
         url: '/tags/git/'
+      - name: Sviluppo agile - Jira
+        description: 'Sviluppo software agile, gestione di progetti'
+        percent: 75
+        icon: calendar-days
+        url: '/tags/agile-development/'
   - name: Hobby
     color: '#eeac02'
     color_border: '#f0bf23'
