@@ -117,6 +117,57 @@ Edit `config/_default/params.yaml` to change:
 
 For detailed information on overriding Hugo Blox templates and blocks, refer to the `CUSTOMIZATION_GUIDE.md` file in the repository.
 
+## 🔗 Clickable Skills & Project Linking
+
+This website features an interactive skill system that links skills to related projects using Hugo's taxonomy system.
+
+### How It Works
+
+- **Skills are clickable**: In the Skills section, certain skills (like "Java Spring", "Kubernetes", "Android") are clickable links
+- **Automatic filtering**: Clicking a skill takes you to a page showing all projects that use that technology
+
+### Adding Clickable Skills
+
+To make a skill clickable and link it to projects:
+
+1. **Add a URL to the skill** in `content/{language}/authors/admin/_index.md`:
+
+```yaml
+skills:
+  - name: Technical Skills
+    items:
+      - name: Java - Java Spring
+        description: 'Backend development and microservice architectures'
+        percent: 90
+        icon: code-bracket
+        url: '/tags/java-spring/'  # Add this line!
+```
+
+2. **Tag your projects** with the corresponding tag in `content/{language}/projects/project-name/index.md`:
+
+```yaml
+tags:
+  - Java Spring  # Must match the tag name in the URL
+  - Kubernetes
+  - Docker
+```
+
+3. **Keep tags consistent** across all language versions (EN, ES, IT) for the same project
+
+### Best Practices
+
+- Use **English tag names** even in translated content (e.g., "Java Spring" instead of "Primavera de Java")
+- Tech terms are universally understood and keep content organized
+- The URL format is always `/tags/tag-name/` (lowercase, hyphenated)
+- Hugo automatically creates language-specific tag pages (`/en/tags/...`, `/es/tags/...`, `/it/tags/...`)
+
+### Example
+
+When a user clicks on the "Android Development" skill:
+- English users → `/en/tags/android/` → Shows English projects tagged with "Android"
+- Spanish users → `/es/tags/android/` → Shows Spanish projects tagged with "Android"  
+- Italian users → `/it/tags/android/` → Shows Italian projects tagged with "Android"
+
 ## 🏗️ Building for Production
 
 Build the static site:

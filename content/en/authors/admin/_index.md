@@ -143,7 +143,7 @@ skills:
         description: 'Backend development and microservice architectures'
         percent: 90
         icon: code-bracket
-        url: '/tags/java-spring/'
+        url: '/tags/java/'
       - name: Docker - Kubernetes
         description: 'Deployment of applications, CICD pipelines'
         percent: 75
@@ -163,6 +163,7 @@ skills:
         description: 'Project collaboration and deployment'
         percent: 80
         icon: arrow-path
+        url: '/tags/git/'
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
