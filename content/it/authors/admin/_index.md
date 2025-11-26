@@ -204,10 +204,10 @@ languages:
     description: Madrelingua
   - name: Inglese
     percent: 90
-    description: IELTS Academic - Livello C1 (Punteggio complessivo 7.5)
+    description: 'Cambridge: Livello B2 (Punteggio totale 175) | Vissuto nel Regno Unito per sei mesi'
   - name: Spagnolo
     percent: 75
-    description: Certificato DELE B2 - Intermedio/Intermedio Superiore
+    description: 'Esame di Corso B2 presso *Universitat Politècnica de València, Spagna* | Vissuto in Spagna per sei mesi'
 
 # Awards.
 #   Add/remove as many awards below as you like.

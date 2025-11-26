@@ -204,10 +204,10 @@ languages:
     description: Hablante nativo
   - name: Inglés
     percent: 90
-    description: IELTS Academic - Nivel C1 (Puntuación total 7.5)
+    description: 'Cambridge: Nivel B2 (Puntuación total 175) | Viví en Reino Unido durante seis meses'
   - name: Español
     percent: 75
-    description: Certificado DELE B2 - Intermedio/Intermedio Alto
+    description: 'Examen de Curso B2 en *Universitat Politècnica de València, España* | Viví en España durante seis meses'
 
 # Awards.
 #   Add/remove as many awards below as you like.
