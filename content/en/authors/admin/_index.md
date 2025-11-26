@@ -140,32 +140,28 @@ skills:
   - name: Technical Skills
     items:
       - name: Java - Java Spring
-        description: 'Backend development and microservice architectures'
+        description: 'Microservice architectures'
         percent: 90
         icon: code-bracket
         url: '/tags/java/'
       - name: Docker - Kubernetes
-        # description: 'Containerization and orchestration of Microservices'
         percent: 75
         icon: server-stack
         url: '/tags/kubernetes/'
       - name: Web Development
-        # description: 'Frontend design - HTML, CSS, Javascript'
+        description: 'HTML, CSS, Javascript'
         percent: 80
         icon: wifi
         url: '/tags/web/'
       - name: Android Development
-        # description: 'Full-stack Android applications and Firebase integration'
         percent: 70
         icon: device-phone-mobile
         url: '/tags/android/'
       - name: Git - GitHub
-        # description: 'Project collaboration and deployment'
         percent: 85
         icon: arrow-path
         url: '/tags/git/'
       - name: Agile Development - Jira
-        description: 'Agile software development, project management'
         percent: 75
         icon: calendar-days
         url: '/tags/agile-development/'
