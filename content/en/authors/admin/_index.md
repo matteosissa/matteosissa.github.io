@@ -157,7 +157,7 @@ skills:
         description: 'Software architecture design'
         percent: 80
         icon: squares-2x2
-        url: '/tags/Python/'
+        url: '/tags/uml/'
       - name: Android Development
         percent: 70
         icon: device-phone-mobile

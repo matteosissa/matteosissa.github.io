@@ -25,6 +25,7 @@ tags:
   - UI Design
   - Git
   - Web
+  - UML
 authors:
   - admin
 ---

@@ -23,6 +23,8 @@ tags:
   - Jira
   - OPC UA Protocol
   - Git
+  - C
+  - UML
 authors:
   - admin
 ---

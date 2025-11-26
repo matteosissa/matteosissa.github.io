@@ -157,7 +157,7 @@ skills:
         description: 'Progettazione architettura software'
         percent: 80
         icon: squares-2x2
-        url: '/tags/Python/'
+        url: '/tags/uml/'
       - name: Sviluppo Android
         percent: 70
         icon: device-phone-mobile
