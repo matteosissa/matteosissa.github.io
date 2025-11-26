@@ -186,10 +186,13 @@ skills:
 languages:
   - name: Italian
     percent: 100
+    description: Native speaker
   - name: English
     percent: 90
+    description: IELTS Academic - C1 Level (Overall 7.5)
   - name: Spanish
     percent: 75
+    description: DELE B2 Certificate - Intermediate/Upper Intermediate
 
 # Awards.
 #   Add/remove as many awards below as you like.

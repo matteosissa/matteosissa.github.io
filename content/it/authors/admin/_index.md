@@ -185,10 +185,13 @@ skills:
 languages:
   - name: Italiano
     percent: 100
+    description: Madrelingua
   - name: Inglese
     percent: 90
+    description: IELTS Academic - Livello C1 (Punteggio complessivo 7.5)
   - name: Spagnolo
     percent: 75
+    description: Certificato DELE B2 - Intermedio/Intermedio Superiore
 
 # Awards.
 #   Add/remove as many awards below as you like.

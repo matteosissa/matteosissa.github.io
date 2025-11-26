@@ -75,11 +75,11 @@
       {{/* Skills in 2 columns - card-based layout */}}
       <style>
         .skills-grid {
-          max-width: 350px;
+          max-width: 300px;
         }
         @media (min-width: 768px) {
           .skills-grid {
-            max-width: 700px;
+            max-width: 650px;
           }
         }
       </style>
@@ -158,6 +158,11 @@
             padding-left: 5%;
           }
         }
+        .language-circle-container {
+          position: relative;
+          width: 7rem;
+          height: 7rem;
+        }
       </style>
       <div class="languages-column-padding w-full">
       
@@ -168,21 +173,31 @@
         </div>
       </div>
 
-      {{/* Languages Circles - Vertical Layout */}}
-      <div class="flex flex-col items-center gap-y-6">
+      {{/* Languages Cards - Vertical Layout */}}
+      <div class="flex flex-col gap-8 max-w-xs mx-auto">
         {{ range $langs }}
-        <div class="flex flex-col items-center">
-          <div class="flex items-center justify-center w-28 h-28">
-            <svg class="transform -rotate-90" viewBox="0 0 288 288">
+        <div class="group flex flex-col items-center text-center">
+          {{/* Circle Progress Indicator */}}
+          <div class="language-circle-container mb-3">
+            <svg class="transform -rotate-90 w-full h-full" viewBox="0 0 288 288">
               <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
                       class="text-gray-200 dark:text-gray-700" />
               <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
-                      class="text-primary-600 dark:text-primary-300"
+                      class="text-primary-600 dark:text-primary-400 transition-colors duration-300"
                       style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc((2 * 22 / 7 * 120) - ((2 * 22 / 7 * 120) * {{.percent}}/100))" />
             </svg>
-            <span class="absolute text-3xl">{{.percent}}%</span>
+            <span class="absolute inset-0 flex items-center justify-center text-3xl font-bold text-gray-900 dark:text-white">{{.percent}}%</span>
           </div>
-          <span class="text-1xl">{{.name}}</span>
+          
+          {{/* Language Info */}}
+          <div class="w-full">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{.name}}</h3>
+            {{ with .description }}
+            <div class="border-t-2 border-gray-200 dark:border-gray-700 group-hover:border-primary-600 dark:group-hover:border-primary-400 transition-colors duration-300 pt-2 mt-1">
+              <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed">{{ . | markdownify | emojify }}</p>
+            </div>
+            {{ end }}
+          </div>
         </div>
         {{ end }}
       </div>

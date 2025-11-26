@@ -186,10 +186,13 @@ skills:
 languages:
   - name: Italiano
     percent: 100
+    description: Hablante nativo
   - name: Inglés
     percent: 90
+    description: IELTS Academic - Nivel C1 (Puntuación total 7.5)
   - name: Español
     percent: 75
+    description: Certificado DELE B2 - Intermedio/Intermedio Alto
 
 # Awards.
 #   Add/remove as many awards below as you like.
