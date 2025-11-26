@@ -279,7 +279,7 @@ html:not(.dark) section#skills {
 
 /* Skill card styling */
 .skill-card {
-  min-height: 140px; /* Ensures consistent card heights */
+  min-height: 125px; /* Ensures consistent card heights */
 }
 
 /* Line clamp utilities for text truncation */
