@@ -24,6 +24,8 @@ tags:
   - OPC UA Protocol
   - Git
   - UML
+  - C
+  - SQL
 authors:
   - admin
 ---

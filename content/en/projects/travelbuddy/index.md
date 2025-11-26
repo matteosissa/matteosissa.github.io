@@ -18,6 +18,7 @@ tags:
   - Clean Architecture
   - XML
   - Git
+  - SQL
 authors:
   - admin
 ---

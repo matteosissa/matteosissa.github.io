@@ -25,6 +25,7 @@ tags:
   - Git
   - C
   - UML
+  - SQL
 authors:
   - admin
 ---

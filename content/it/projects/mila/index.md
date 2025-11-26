@@ -26,6 +26,7 @@ tags:
   - Git
   - Web
   - UML
+  - SQL
 authors:
   - admin
 ---
