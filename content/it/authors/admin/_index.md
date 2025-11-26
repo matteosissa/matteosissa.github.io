@@ -39,7 +39,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/matteosissa
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
+    url: https://linkedin.com/in/matteo-sissa-199676383
 
 interests:
   - Architetture Software
