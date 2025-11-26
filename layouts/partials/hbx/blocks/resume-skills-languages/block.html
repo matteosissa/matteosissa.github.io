@@ -68,8 +68,8 @@
         </div>
       </div>
       
-      {{/* Skills in 2 columns */}}
-      <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-x-6 gap-y-4 w-full mx-auto mb-8" style="max-width: 600px;">
+      {{/* Skills in 2 columns - card-based layout */}}
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mx-auto mb-8" style="max-width: 750px;">
         {{ range .items }}
         {{ $pack := or .icon_pack "fas" }}
         {{ $pack_prefix := $pack }}
@@ -77,37 +77,59 @@
         {{ $pack_prefix = "fa" }}
         {{ end }}
 
-        <div class="skills-content">
-
+        {{/* Skill Card */}}
+        <div class="skill-card bg-white dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 p-4 flex flex-col h-full">
+          
+          {{/* Skill Content - grows to push progress bar to bottom */}}
+          <div class="flex-1 mb-3">
             {{ if .url }}
-            <a href="{{ .url | relLangURL }}" class="skills-link-wrapper" style="display: inline-flex; align-items: flex-start; text-decoration: none; color: inherit; width: 100%;">
-              {{ with .icon }}
-              <span class="skills-icon inline-block">
-                {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em; margin-top: 0.25rem;\"")  }}
-              </span>
+            <a href="{{ .url | relLangURL }}" class="block group" style="text-decoration: none; color: inherit;">
+              <div class="flex items-start gap-2 mb-2">
+                {{ with .icon }}
+                <span class="skills-icon flex-shrink-0 mt-0.5 text-primary-600 dark:text-primary-400">
+                  {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.1em;\"")  }}
+                </span>
+                {{ end }}
+                <span class="skills-name font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors line-clamp-2">
+                  {{ .name | markdownify | emojify }}
+                </span>
+              </div>
+              {{ with .description }}
+              <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 ml-7">{{ . | markdownify | emojify }}</p>
               {{ end }}
-              <span class="skills-name text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                {{ .name | markdownify | emojify }}
-                {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
-              </span>
             </a>
             {{ else }}
-              {{ with .icon }}
-              <span class="skills-icon inline-block">
-                {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em; margin-top: 0.2rem;\"")  }}
-              </span>
+            <div>
+              <div class="flex items-start gap-2 mb-2">
+                {{ with .icon }}
+                <span class="skills-icon flex-shrink-0 mt-0.5 text-gray-600 dark:text-gray-400">
+                  {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.1em;\"")  }}
+                </span>
+                {{ end }}
+                <span class="skills-name font-semibold text-gray-900 dark:text-gray-100 line-clamp-2">
+                  {{ .name | markdownify | emojify }}
+                </span>
+              </div>
+              {{ with .description }}
+              <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 ml-7">{{ . | markdownify | emojify }}</p>
               {{ end }}
-              <span class="skills-name text-gray-700 dark:text-gray-300">
-                {{ .name | markdownify | emojify }}
-                {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
-              </span>
-            {{ end }}
-            {{ if and .percent $show_show_skill_percentage (not $color) }}
-            <div class="skills-wrapper" {{with $color_border}}{{ (printf "style=\"border-color: %s\"" .) | safeHTMLAttr }}{{end}}>
-              <div class="skills-percent" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}{{end}}"></div>
             </div>
             {{ end }}
           </div>
+          
+          {{/* Progress Bar - always at bottom */}}
+          {{ if and .percent $show_show_skill_percentage (not $color) }}
+          <div class="mt-auto">
+            <div class="flex justify-between items-center mb-1">
+              <span class="text-xs text-gray-500 dark:text-gray-400">Proficiency</span>
+              <span class="text-xs font-medium text-gray-700 dark:text-gray-300">{{ .percent }}%</span>
+            </div>
+            <div class="skills-wrapper h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden" {{with $color_border}}{{ (printf "style=\"border-color: %s\"" .) | safeHTMLAttr }}{{end}}>
+              <div class="skills-percent h-full bg-primary-600 dark:bg-primary-500 rounded-full transition-all duration-300" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}{{end}}"></div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
           {{ end }}
         </div>
         {{ end }}
