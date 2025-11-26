@@ -6,3 +6,13 @@ education: "Formazione"
 skills_expertise: "Competenze & Capacità"
 languages: "Lingue"
 skills_clickable_hint: "Clicca su una competenza per vedere i progetti correlati"
+
+# Footer translations
+footer_quick_links: "Link Rapidi"
+footer_about: "Chi sono"
+footer_experience: "Esperienza"
+footer_projects: "Progetti"
+footer_download_cv: "Scarica CV"
+footer_contact: "Contatti"
+footer_education: "Formazione"
+footer_languages: "Lingue"

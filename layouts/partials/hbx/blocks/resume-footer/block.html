@@ -7,6 +7,17 @@
 {{ $person_data := $person.Params }}
 {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
 
+{{/* Get CV URL from home page configuration */}}
+{{ $home_page := site.GetPage "/" }}
+{{ $cv_url := "" }}
+{{ range $home_page.Params.sections }}
+  {{ if eq .block "resume-biography-3" }}
+    {{ with .content.button.url }}
+      {{ $cv_url = . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{/* Add CSS to hide the default page footer */}}
 <style>
 .page-footer {
@@ -46,18 +57,20 @@
       
       {{/* Column 2: Quick Links */}}
       <div>
-        <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
+        <h3 class="text-white text-xl font-bold mb-4">{{ i18n "footer_quick_links" | default "Quick Links" }}</h3>
         <ul class="space-y-2">
-          <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-          <li><a href="#experience" class="text-gray-400 hover:text-white transition-colors">Experience</a></li>
-          <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
-          <li><a href="/uploads/cv.pdf" class="text-gray-400 hover:text-white transition-colors">Download CV</a></li>
+          <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">{{ i18n "footer_about" | default "About" }}</a></li>
+          <li><a href="#experience" class="text-gray-400 hover:text-white transition-colors">{{ i18n "footer_experience" | default "Experience" }}</a></li>
+          <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">{{ i18n "footer_projects" | default "Projects" }}</a></li>
+          {{ if $cv_url }}
+          <li><a href="{{ $cv_url }}" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors">{{ i18n "footer_download_cv" | default "Download CV" }}</a></li>
+          {{ end }}
         </ul>
         
         {{/* Interests */}}
         {{ with $person_data.interests }}
         <div class="mt-6">
-          <h4 class="text-white font-semibold mb-2">Interests</h4>
+          <h4 class="text-white font-semibold mb-2">{{ i18n "interests" | default "Interests" }}</h4>
           <div class="flex flex-wrap gap-2">
             {{ range . }}
             <span class="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">{{ . }}</span>
@@ -69,7 +82,7 @@
       
       {{/* Column 3: Contact & Education */}}
       <div>
-        <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
+        <h3 class="text-white text-xl font-bold mb-4">{{ i18n "footer_contact" | default "Contact" }}</h3>
         
         {{/* Email */}}
         {{ range $person_data.profiles }}
@@ -95,7 +108,7 @@
         {{/* Latest Education */}}
         {{ with $person_data.education }}
         <div class="mt-6">
-          <h4 class="text-white font-semibold mb-2">Education</h4>
+          <h4 class="text-white font-semibold mb-2">{{ i18n "footer_education" | default "Education" }}</h4>
           {{ $latest := index . 0 }}
           <div class="text-sm">
             <p class="text-gray-300">{{ $latest.area }}</p>
@@ -107,7 +120,7 @@
         {{/* Languages */}}
         {{ with $person_data.languages }}
         <div class="mt-6">
-          <h4 class="text-white font-semibold mb-2">Languages</h4>
+          <h4 class="text-white font-semibold mb-2">{{ i18n "footer_languages" | default "Languages" }}</h4>
           <div class="space-y-1">
             {{ range . }}
             <div class="flex justify-between text-sm">

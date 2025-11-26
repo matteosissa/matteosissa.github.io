@@ -6,3 +6,13 @@ education: "Education"
 skills_expertise: "Skills & Expertise"
 languages: "Languages"
 skills_clickable_hint: "Click on a skill to see related projects"
+
+# Footer translations
+footer_quick_links: "Quick Links"
+footer_about: "About"
+footer_experience: "Experience"
+footer_projects: "Projects"
+footer_download_cv: "Download CV"
+footer_contact: "Contact"
+footer_education: "Education"
+footer_languages: "Languages"
