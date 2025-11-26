@@ -49,30 +49,35 @@
         </div>
       </div>
 
-      {{/* Skills Grid */}}
+      {{/* Skills Grid - 2 columns for better space efficiency */}}
       {{ $columns := 1 }}
-      <div class="grid grid-cols-1 items-start gap-8 w-full mx-auto" style="max-width: 400px;">
-        {{ range $index, $skill_group := $skills }}
-        {{ $color := .color | default "" }}
-        {{ $color_border := .color_border | default "" }}
-        <div class="w-full">
-          <div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
-            {{ .name | markdownify | emojify }}
-            {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
-            {{ if eq $index 0 }}
-            <p class="text-xs text-gray-400 dark:text-gray-500 font-normal mt-1">
-              💡 {{ i18n "skills_clickable_hint" | default "Click on a skill to see related projects" }}
-            </p>
-            {{ end }}
-          </div>
-          {{ range .items }}
-          {{ $pack := or .icon_pack "fas" }}
-          {{ $pack_prefix := $pack }}
-          {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-          {{ $pack_prefix = "fa" }}
+      {{ range $index, $skill_group := $skills }}
+      {{ $color := .color | default "" }}
+      {{ $color_border := .color_border | default "" }}
+      
+      {{/* Skill Group Title */}}
+      <div class="w-full mb-4">
+        <div class="text-xl font-bold text-gray-900 dark:text-white">
+          {{ .name | markdownify | emojify }}
+          {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+          {{ if eq $index 0 }}
+          <p class="text-xs text-gray-400 dark:text-gray-500 font-normal mt-1">
+            💡 {{ i18n "skills_clickable_hint" | default "Click on a skill to see related projects" }}
+          </p>
           {{ end }}
+        </div>
+      </div>
+      
+      {{/* Skills in 2 columns */}}
+      <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-x-6 gap-y-4 w-full mx-auto mb-8" style="max-width: 600px;">
+        {{ range .items }}
+        {{ $pack := or .icon_pack "fas" }}
+        {{ $pack_prefix := $pack }}
+        {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+        {{ $pack_prefix = "fa" }}
+        {{ end }}
 
-          <div class="skills-content">
+        <div class="skills-content">
 
             {{ if .url }}
             <a href="{{ .url | relLangURL }}" class="skills-link-wrapper" style="display: inline-flex; align-items: flex-start; text-decoration: none; color: inherit; width: 100%;">
@@ -106,7 +111,6 @@
           {{ end }}
         </div>
         {{ end }}
-      </div>
       </div>{{/* Close skills-column-padding wrapper */}}
     </div>
 
