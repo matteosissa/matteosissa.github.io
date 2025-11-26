@@ -17,8 +17,8 @@ sections:
       text: ''
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Scarica CV
-        url: uploads/resume.pdf
+        text: Visualizza CV
+        url: https://flowcv.com/resume/tu7mms7uk21g
       headings:
         about: ''
         interests: ''
