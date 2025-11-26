@@ -82,6 +82,26 @@
             max-width: 650px;
           }
         }
+        /* Mobile tap support for expandable cards */
+        @media (hover: none) {
+          .skill-card:focus-within .skill-description,
+          .skill-card:active .skill-description {
+            grid-template-rows: 1fr;
+          }
+        }
+        /* Expandable description - hidden by default */
+        .skill-description {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.3s ease-in-out;
+        }
+        .skill-description > div {
+          overflow: hidden;
+        }
+        /* Show on hover */
+        .skill-card:hover .skill-description {
+          grid-template-rows: 1fr;
+        }
       </style>
       <div class="skills-grid grid grid-cols-1 md:grid-cols-2 gap-5 w-full mx-auto mb-8">
         {{ range .items }}
@@ -90,50 +110,54 @@
         {{ if in (slice "fab" "fas" "far" "fal") $pack }}
         {{ $pack_prefix = "fa" }}
         {{ end }}
+        {{ $has_description := .description }}
 
-        {{/* Skill Card */}}
-        <div class="skill-card bg-white dark:bg-zinc-800 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 p-4 flex flex-col h-full">
+        {{/* Skill Card - Expandable on hover/tap */}}
+        <div class="skill-card bg-white dark:bg-zinc-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-4 flex flex-col">
           
-          {{/* Skill Content - grows to push progress bar to bottom */}}
-          <div class="flex-1 mb-3">
+          {{/* Skill Content */}}
+          <div class="mb-2">
             {{ if .url }}
             <a href="{{ .url | relLangURL }}" class="block group" style="text-decoration: none; color: inherit;">
-              <div class="flex items-start gap-2 mb-2">
+              <div class="flex items-center gap-2">
                 {{ with .icon }}
-                <span class="skills-icon flex-shrink-0 mt-0.5 text-primary-600 dark:text-primary-400">
+                <span class="skills-icon flex-shrink-0 text-primary-600 dark:text-primary-400">
                   {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.1em;\"")  }}
                 </span>
                 {{ end }}
-                <span class="skills-name font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors line-clamp-2">
+                <span class="skills-name font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                   {{ .name | markdownify | emojify }}
                 </span>
               </div>
-              {{ with .description }}
-              <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 ml-7">{{ . | markdownify | emojify }}</p>
-              {{ end }}
             </a>
             {{ else }}
             <div>
-              <div class="flex items-start gap-2 mb-2">
+              <div class="flex items-center gap-2">
                 {{ with .icon }}
-                <span class="skills-icon flex-shrink-0 mt-0.5 text-gray-600 dark:text-gray-400">
+                <span class="skills-icon flex-shrink-0 text-gray-600 dark:text-gray-400">
                   {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.1em;\"")  }}
                 </span>
                 {{ end }}
-                <span class="skills-name font-semibold text-gray-900 dark:text-gray-100 line-clamp-2">
+                <span class="skills-name font-semibold text-gray-900 dark:text-gray-100">
                   {{ .name | markdownify | emojify }}
                 </span>
               </div>
-              {{ with .description }}
-              <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 ml-7">{{ . | markdownify | emojify }}</p>
-              {{ end }}
             </div>
             {{ end }}
           </div>
+
+          {{/* Expandable Description - hidden by default, shows on hover/tap */}}
+          {{ with .description }}
+          <div class="skill-description">
+            <div>
+              <p class="text-sm text-gray-600 dark:text-gray-400 pt-2 ml-6">{{ . | markdownify | emojify }}</p>
+            </div>
+          </div>
+          {{ end }}
           
           {{/* Progress Bar - always at bottom */}}
           {{ if and .percent $show_show_skill_percentage (not $color) }}
-          <div class="mt-auto">
+          <div class="mt-auto pt-2">
             <div class="flex items-center gap-3">
               <div class="skills-wrapper flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden" {{with $color_border}}{{ (printf "style=\"border-color: %s\"" .) | safeHTMLAttr }}{{end}}>
                 <div class="skills-percent h-full bg-primary-600 dark:bg-primary-500 rounded-full transition-all duration-300" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}{{end}}"></div>
