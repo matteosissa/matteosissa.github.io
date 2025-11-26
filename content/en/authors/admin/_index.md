@@ -153,10 +153,19 @@ skills:
         percent: 80
         icon: wifi
         url: '/tags/web/'
+      - name: UML
+        description: 'Software architecture design'
+        percent: 80
+        icon: squares-2x2
+        url: '/tags/Python/'
       - name: Android Development
         percent: 70
         icon: device-phone-mobile
         url: '/tags/android/'
+      - name: C - C++
+        percent: 70
+        icon: command-line
+        url: '/tags/C/'
       - name: Git - GitHub
         percent: 85
         icon: arrow-path
@@ -165,6 +174,16 @@ skills:
         percent: 75
         icon: calendar-days
         url: '/tags/agile-development/'
+      - name: SQL
+        description: 'Postgres, Supabase, Firebase, SQLite'
+        percent: 70
+        icon: circle-stack
+        url: '/tags/sql/'
+      - name: Python
+        description: 'Keras, Tensorflow'
+        percent: 55
+        icon: calculator
+        url: '/tags/python/'
       
   - name: Hobbies
     color: '#eeac02'

@@ -140,36 +140,51 @@ skills:
   - name: Competencias Técnicas
     items:
       - name: Java - Java Spring
-        description: 'Desarrollo backend y arquitecturas de microservicios'
+        description: 'Arquitecturas de microservicios'
         percent: 90
         icon: code-bracket
         url: '/tags/java/'
       - name: Docker - Kubernetes
-        description: 'Containerización y orquestación de Microservicios'
         percent: 75
         icon: server-stack
         url: '/tags/kubernetes/'
       - name: Desarrollo Web
-        description: 'Diseño de frontend - HTML, CSS, Javascript'
-        percent: 85
+        description: 'HTML, CSS, Javascript'
+        percent: 80
         icon: wifi
         url: '/tags/web/'
+      - name: UML
+        description: 'Diseño de arquitectura de software'
+        percent: 80
+        icon: squares-2x2
+        url: '/tags/Python/'
       - name: Desarrollo Android
-        description: 'Aplicaciones Android full-stack e integración Firebase'
-        percent: 85
+        percent: 70
         icon: device-phone-mobile
         url: '/tags/android/'
+      - name: C - C++
+        percent: 70
+        icon: command-line
+        url: '/tags/C/'
       - name: Git - GitHub
-        description: 'Colaboración y despliegue de proyectos'
-        percent: 80
+        percent: 85
         icon: arrow-path
         url: '/tags/git/'
-      - name: Desarrollo ágil - Jira
-        description: 'Desarrollo software ágil, gestión de proyectos'
+      - name: Desarrollo Ágil - Jira
         percent: 75
         icon: calendar-days
         url: '/tags/agile-development/'
-
+      - name: SQL
+        description: 'Postgres, Supabase, Firebase, SQLite'
+        percent: 70
+        icon: circle-stack
+        url: '/tags/sql/'
+      - name: Python
+        description: 'Keras, Tensorflow'
+        percent: 55
+        icon: calculator
+        url: '/tags/python/'
+      
   - name: Aficiones
     color: '#eeac02'
     color_border: '#f0bf23'
