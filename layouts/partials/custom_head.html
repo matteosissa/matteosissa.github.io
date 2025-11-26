@@ -1,0 +1,57 @@
+{{/* Add structured data (JSON-LD) for better SEO */}}
+{{ $person := site.GetPage "authors/admin" }}
+{{ $person_data := $person.Params }}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ $person_data.title }}",
+  "givenName": "{{ $person_data.first_name }}",
+  "familyName": "{{ $person_data.last_name }}",
+  "jobTitle": "{{ $person_data.role }}",
+  "description": "{{ site.Params.marketing.seo.description }}",
+  "url": "{{ site.BaseURL }}",
+  "image": "{{ site.BaseURL }}media/icon.png",
+  "sameAs": [
+    {{ range $index, $profile := $person_data.profiles }}
+    {{ if $index }},{{ end }}
+    "{{ $profile.url }}"
+    {{ end }}
+  ],
+  "alumniOf": [
+    {{ range $index, $edu := $person_data.education }}
+    {{ if $index }},{{ end }}
+    {
+      "@type": "EducationalOrganization",
+      "name": "{{ $edu.institution }}",
+      "url": "{{ $edu.institution_url }}"
+    }
+    {{ end }}
+  ],
+  "knowsAbout": [
+    {{ range $index, $interest := $person_data.interests }}
+    {{ if $index }},{{ end }}
+    "{{ $interest }}"
+    {{ end }}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Milan",
+    "addressCountry": "IT"
+  }
+}
+</script>
+
+{{/* Add metadata for personal website */}}
+<meta name="author" content="{{ $person_data.title }}">
+<meta name="keywords" content="Matteo Sissa, Software Engineer, Software Architect, Politecnico di Milano, Java Developer, Microservices, Clean Architecture, SCRUM, Software Engineering, Modena, Milan, Italy, Computer Science, Software Development, Full Stack Developer, Backend Developer">
+
+{{/* Open Graph tags for social media */}}
+<meta property="og:type" content="profile">
+<meta property="profile:first_name" content="{{ $person_data.first_name }}">
+<meta property="profile:last_name" content="{{ $person_data.last_name }}">
+
+{{/* Additional SEO meta tags */}}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="{{ .Permalink }}">

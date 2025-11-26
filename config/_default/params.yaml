@@ -13,10 +13,13 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The personal website of Matteo Sissa from Modena, serving as a resume of his achievements and projects.'
+    org_name: 'Politecnico di Milano'
+    description: 'Matteo Sissa - Software Engineer and Architect from Modena, Italy. Master graduate from Politecnico di Milano specializing in software architectures, microservices, clean code, and SCRUM methodologies. Explore my portfolio of projects including Marionette, TravelBuddy, and SecurePubSub.'
+    twitter: ''
   analytics:
     google_analytics: ''
+    google_tag_manager: ''
+    microsoft_clarity: ''
     baidu_tongji: ''
     plausible: ''
     fathom: ''

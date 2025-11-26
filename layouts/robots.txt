@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: {{ site.BaseURL }}sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Disallow crawling of search results or dynamic pages if any
+Disallow: /tags/page/
+Disallow: /authors/page/
+Disallow: /blog/page/
