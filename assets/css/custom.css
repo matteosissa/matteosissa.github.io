@@ -255,12 +255,18 @@ body .container.max-w-\[65ch\] {
 }
 
 /* Background for skills section - applies to entire section including padding */
-section#skills {
+/* Light mode - needs to be more specific to override media query on mobile */
+section#skills,
+html:not(.dark) section#skills {
   background-color: rgb(249 250 251) !important; /* Light mode: gray-50 */
 }
 
 /* Dark mode background for skills section - subtle zinc tone for elegance */
 @media (prefers-color-scheme: dark) {
+  html:not(.dark) section#skills {
+    background-color: rgb(249 250 251) !important; /* Keep light in light mode even if system is dark */
+  }
+  
   section#skills {
     background-color: rgb(31, 31, 34) !important; /* Dark mode: zinc-800 - elegant and visible */
   }
