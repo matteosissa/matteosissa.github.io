@@ -56,7 +56,7 @@
       {{ $color_border := .color_border | default "" }}
       
       {{/* Skill Group Title */}}
-      <div class="w-full mb-4">
+      <div class="w-full mb-4 text-center">
         <div class="text-xl font-bold text-gray-900 dark:text-white">
           {{ .name | markdownify | emojify }}
           {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
@@ -69,7 +69,7 @@
       </div>
       
       {{/* Skills in 2 columns - card-based layout */}}
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mx-auto mb-8" style="max-width: 900px;">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full mx-auto mb-8" style="max-width: 900px;">
         {{ range .items }}
         {{ $pack := or .icon_pack "fas" }}
         {{ $pack_prefix := $pack }}
