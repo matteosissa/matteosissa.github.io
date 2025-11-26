@@ -3,3 +3,9 @@
   {{ $js := $js | minify | fingerprint }}
   <script src="{{ $js.RelPermalink }}" defer></script>
 {{ end }}
+
+{{ $skillJs := resources.Get "js/skill-links.js" }}
+{{ if $skillJs }}
+  {{ $skillJs := $skillJs | minify | fingerprint }}
+  <script src="{{ $skillJs.RelPermalink }}" defer></script>
+{{ end }}

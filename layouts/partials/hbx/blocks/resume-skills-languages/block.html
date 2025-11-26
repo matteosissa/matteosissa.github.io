@@ -92,47 +92,25 @@
         {{ end }}
 
         {{/* Skill Card */}}
-        <div class="skill-card bg-white dark:bg-zinc-800 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 p-4 flex flex-col h-full">
+        <div class="skill-card bg-white dark:bg-zinc-800 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 p-4 flex flex-col h-full group" {{ if .url }}data-skill-url="{{ .url | relLangURL }}" style="cursor: pointer;"{{ end }}>
           
           {{/* Skill Content */}}
           <div class="flex-1 ">
-            {{ if .url }}
-            <a href="{{ .url | relLangURL }}" class="block group" style="text-decoration: none; color: inherit;">
-              <div class="flex items-start gap-2">
-                {{ with .icon }}
-                <span class="skills-icon flex-shrink-0 mt-0.5 text-primary-600 dark:text-primary-400">
-                  {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.1em;\"")  }}
+            <div class="flex items-start gap-2">
+              {{ with .icon }}
+              <span class="skills-icon flex-shrink-0 mt-0.5 {{ if $.url }}text-primary-600 dark:text-primary-400{{ else }}text-blue-600 dark:text-blue-400{{ end }}">
+                {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.1em;\"")  }}
+              </span>
+              {{ end }}
+              <div>
+                <span class="skills-name font-semibold text-gray-900 dark:text-gray-100 {{ if $.url }}group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors{{ end }} line-clamp-2 block">
+                  {{ .name | markdownify | emojify }}
                 </span>
+                {{ with .description }}
+                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mt-1">{{ . | markdownify | emojify }}</p>
                 {{ end }}
-                <div>
-                  <span class="skills-name font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors line-clamp-2 block">
-                    {{ .name | markdownify | emojify }}
-                  </span>
-                  {{ with .description }}
-                  <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mt-1">{{ . | markdownify | emojify }}</p>
-                  {{ end }}
-                </div>
-              </div>
-            </a>
-            {{ else }}
-            <div>
-              <div class="flex items-start gap-2">
-                {{ with .icon }}
-                <span class="skills-icon flex-shrink-0 mt-0.5 text-blue-600 dark:text-blue-400">
-                  {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1.1em;\"")  }}
-                </span>
-                {{ end }}
-                <div>
-                  <span class="skills-name font-semibold text-gray-900 dark:text-gray-100 line-clamp-2 block">
-                    {{ .name | markdownify | emojify }}
-                  </span>
-                  {{ with .description }}
-                  <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mt-1">{{ . | markdownify | emojify }}</p>
-                  {{ end }}
-                </div>
               </div>
             </div>
-            {{ end }}
           </div>
           
           {{/* Progress Bar - always at bottom */}}
