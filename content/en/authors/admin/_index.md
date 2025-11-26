@@ -204,10 +204,10 @@ languages:
     description: Native speaker
   - name: English
     percent: 90
-    description: IELTS Academic - C1 Level (Overall 7.5)
+    description: 'Cambridge: B2 Level (Overall Score 175) | Lived in UK for six months'
   - name: Spanish
     percent: 75
-    description: DELE B2 Certificate - Intermediate/Upper Intermediate
+    description: 'B2 Course Exam at *Universitat Politècnica de València, Spain* | Lived in Spain for six months'
 
 # Awards.
 #   Add/remove as many awards below as you like.
