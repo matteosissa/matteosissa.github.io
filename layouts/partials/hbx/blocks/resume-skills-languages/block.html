@@ -17,7 +17,7 @@
 {{ $show_show_skill_percentage := $block.design.show_skill_percentage | default true }}
 
 {{/* Two-column layout container */}}
-<div class="max-w-7xl mx-auto px-6 md:px-0">
+<div class="max-w-7xl mx-auto px-6">
   <style>
     .skills-languages-grid {
       gap: 5rem; /* Mobile: larger gap for vertical stack */
@@ -33,6 +33,10 @@
     {{/* LEFT COLUMN: SKILLS */}}
     <div class="flex flex-col items-center" style="padding-left: 0; padding-right: 0;">
       <style>
+        .skills-column-padding {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
         @media (min-width: 1024px) {
           .skills-column-padding {
             padding-left: 0%;
@@ -69,7 +73,17 @@
       </div>
       
       {{/* Skills in 2 columns - card-based layout */}}
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full mx-auto mb-8" style="max-width: 900px;">
+      <style>
+        .skills-grid {
+          max-width: 350px;
+        }
+        @media (min-width: 768px) {
+          .skills-grid {
+            max-width: 700px;
+          }
+        }
+      </style>
+      <div class="skills-grid grid grid-cols-1 md:grid-cols-2 gap-5 w-full mx-auto mb-8">
         {{ range .items }}
         {{ $pack := or .icon_pack "fas" }}
         {{ $pack_prefix := $pack }}
