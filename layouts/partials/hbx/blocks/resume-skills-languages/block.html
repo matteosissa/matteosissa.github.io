@@ -194,7 +194,7 @@
             <h3 class="text-xl font-bold text-gray-900 dark:text-white ">{{.name}}</h3>
             {{ with .description }}
             <div class="border-t-2 border-gray-200 dark:border-gray-700 group-hover:border-primary-600 dark:group-hover:border-primary-400 transition-colors duration-300 pt-2">
-              <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed">{{ . | markdownify | emojify }}</p>
+              <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed" style="max-width: 290px; margin-left: auto; margin-right: auto; word-wrap: break-word;">{{ . | markdownify | emojify }}</p>
             </div>
             {{ end }}
           </div>
