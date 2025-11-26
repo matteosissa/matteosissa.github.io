@@ -165,7 +165,7 @@ skills:
       - name: C - C++
         percent: 70
         icon: command-line
-        url: '/tags/C/'
+        url: '/tags/c/'
       - name: Git - GitHub
         percent: 85
         icon: arrow-path
