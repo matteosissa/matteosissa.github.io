@@ -83,7 +83,7 @@
           }
         }
       </style>
-      <div class="skills-grid grid grid-cols-1 md:grid-cols-2 gap-5 w-full mx-auto mb-8">
+      <div class="skills-grid grid grid-cols-1 md:grid-cols-2 gap-5 w-full mx-auto mb-8" data-skill-no-projects-msg="{{ i18n "skill_no_projects" | default "No projects available for this skill yet" }}">
         {{ range .items }}
         {{ $pack := or .icon_pack "fas" }}
         {{ $pack_prefix := $pack }}

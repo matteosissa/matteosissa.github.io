@@ -6,6 +6,7 @@ education: "Education"
 skills_expertise: "Skills & Expertise"
 languages: "Languages"
 skills_clickable_hint: "Click on a skill to see related projects"
+skill_no_projects: "No projects available for this skill yet"
 
 # Footer translations
 footer_quick_links: "Quick Links"

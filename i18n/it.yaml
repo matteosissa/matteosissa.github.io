@@ -6,6 +6,7 @@ education: "Formazione"
 skills_expertise: "Competenze & Capacità"
 languages: "Lingue"
 skills_clickable_hint: "Clicca su una competenza per vedere i progetti correlati"
+skill_no_projects: "Non ci sono ancora progetti disponibili per questa competenza"
 
 # Footer translations
 footer_quick_links: "Link Rapidi"

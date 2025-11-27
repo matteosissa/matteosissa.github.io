@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Find all skill cards with URLs
   const skillCards = document.querySelectorAll('[data-skill-url]');
   
+  // Get the translated message from the skills grid container
+  const skillsGrid = document.querySelector('.skills-grid');
+  const noProjectsMessage = skillsGrid ? skillsGrid.getAttribute('data-skill-no-projects-msg') : 'No projects available for this skill yet';
+  
   skillCards.forEach(card => {
     const url = card.getAttribute('data-skill-url');
     if (!url) return;
@@ -22,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
           window.location.href = url;
         } else {
           // Page doesn't exist (404), show tooltip
-          showTooltip(card, 'No projects available for this skill yet');
+          showTooltip(card, noProjectsMessage);
         }
       } catch (error) {
         // Network error, try to navigate anyway
