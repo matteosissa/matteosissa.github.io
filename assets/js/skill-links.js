@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Make the card look clickable
     card.style.cursor = 'pointer';
     
+    // Variables to track touch/scroll behavior
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchStartTime = 0;
+    let isTouchMoved = false;
+    
     const handleClick = async function(e) {
       e.preventDefault();
       
@@ -34,11 +40,40 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     };
     
-    // Handle both click (desktop) and touchend (mobile) events
+    // Handle desktop click
     card.addEventListener('click', handleClick);
+    
+    // Handle mobile touch with scroll detection
+    card.addEventListener('touchstart', function(e) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchStartTime = Date.now();
+      isTouchMoved = false;
+    }, { passive: true });
+    
+    card.addEventListener('touchmove', function(e) {
+      // Mark as moved if user dragged more than 10px
+      const touchMoveX = e.touches[0].clientX;
+      const touchMoveY = e.touches[0].clientY;
+      const deltaX = Math.abs(touchMoveX - touchStartX);
+      const deltaY = Math.abs(touchMoveY - touchStartY);
+      
+      if (deltaX > 10 || deltaY > 10) {
+        isTouchMoved = true;
+      }
+    }, { passive: true });
+    
     card.addEventListener('touchend', function(e) {
-      e.preventDefault();
-      handleClick(e);
+      const touchEndTime = Date.now();
+      const touchDuration = touchEndTime - touchStartTime;
+      
+      // Only trigger if:
+      // 1. Touch didn't move much (not a scroll)
+      // 2. Touch was quick (less than 300ms, indicating a tap not a long press)
+      if (!isTouchMoved && touchDuration < 300) {
+        e.preventDefault();
+        handleClick(e);
+      }
     });
   });
 });
