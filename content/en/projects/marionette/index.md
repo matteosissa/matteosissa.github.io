@@ -12,10 +12,10 @@ links:
     name: Marionette Tool
     url: https://github.com/matteosissa/MarionetteTool
   - name: Read Thesis
-    url: 'uploads/masters-thesis/masters-thesis.pdf'
+    url: /uploads/masters-thesis/masters-thesis.pdf
     icon: 'arrow-down-tray'
   - name: View Presentation
-    url: 'uploads/masters-thesis/masters-thesis-presentation.pptx'
+    url: /uploads/masters-thesis/masters-thesis-presentation.pptx
     icon: 'presentation-chart-bar'
 summary: Master's thesis project focusing on developing a framework to inject behavioural variability points in the codebase of a microservice-based application.
 

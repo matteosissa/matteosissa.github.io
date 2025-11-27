@@ -3,13 +3,13 @@ title: SecurePubSub
 date: 2025-01-15
 links:
   - name: View ABB Proposal
-    url: 'uploads/abb-opc-ua/project-proposal.pdf'
+    url: /uploads/abb-opc-ua/project-proposal.pdf
     icon: 'presentation-chart-bar'
   - name: Read Requirements Doc
-    url: 'uploads/abb-opc-ua/requirements-definition-document.pdf'
+    url: /uploads/abb-opc-ua/requirements-definition-document.pdf
     icon: 'arrow-down-tray'
   - name: View Final Presentation
-    url: 'uploads/abb-opc-ua/final-presentation.pptx'
+    url: /uploads/abb-opc-ua/final-presentation.pptx
     icon: 'presentation-chart-bar'
 summary: 
 In collaboration with ABB, a project for the implementation of a security layer on top of the publish-subscribe model offered by the OPC UA technology.

@@ -12,10 +12,10 @@ links:
     name: Strumento Marionette
     url: https://github.com/matteosissa/MarionetteTool
   - name: Leggi Tesi
-    url: 'uploads/masters-thesis/masters-thesis.pdf'
+    url: /uploads/masters-thesis/masters-thesis.pdf
     icon: 'arrow-down-tray'
   - name: Visualizza Presentazione
-    url: 'uploads/masters-thesis/masters-thesis-presentation.pptx'
+    url: /uploads/masters-thesis/masters-thesis-presentation.pptx
     icon: 'presentation-chart-bar'
 summary: Progetto di tesi magistrale incentrato sullo sviluppo di un framework per iniettare punti di variabilità comportamentale nel codice di un'applicazione basata su microservizi.
 

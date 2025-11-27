@@ -95,10 +95,10 @@ work:
       Thesis Title: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._"
     buttons:
       - text: Read Thesis
-        url: 'uploads/masters-thesis/masters-thesis.pdf'
+        url: /uploads/masters-thesis/masters-thesis.pdf
         icon: 'arrow-down-tray'
       - text: View Presentation
-        url: 'uploads/masters-thesis/masters-thesis-presentation.pptx'
+        url: /uploads/masters-thesis/masters-thesis-presentation.pptx
         icon: 'presentation-chart-bar'
   - position: Software Developer, SecurePubSub Project
     company_name: ABB
@@ -110,13 +110,13 @@ work:
       Scrum-based project for a university-supported collaboration with an external company, ABB. The team was distributed across two countries, counting a total of eight people. The objective was the extension of the OPC UA technology with a security layer for publish-subscribe communication.
     buttons:
       - text: ABB Proposal
-        url: 'uploads/abb-opc-ua/project-proposal.pdf'
+        url: /uploads/abb-opc-ua/project-proposal.pdf
         icon: 'presentation-chart-bar'
       - text: Requirements Doc
-        url: 'uploads/abb-opc-ua/requirements-definition-document.pdf'
+        url: /uploads/abb-opc-ua/requirements-definition-document.pdf
         icon: 'arrow-down-tray'
       - text: Final Presentation
-        url: 'uploads/abb-opc-ua/final-presentation.pptx'
+        url: /uploads/abb-opc-ua/final-presentation.pptx
         icon: 'presentation-chart-bar'
   - position: Bachelor's Thesis University Research
     company_name: Università degli studi di Modena e Reggio Emilia
@@ -128,10 +128,10 @@ work:
       Thesis Title: "_Cross-compiling Java-FX projects on Android devices._"
     buttons:
       - text: Read Thesis
-        url: 'uploads/bachelors-thesis/bachelors-thesis.pdf'
+        url: /uploads/bachelors-thesis/bachelors-thesis.pdf
         icon: 'arrow-down-tray'
       - text: View Presentation
-        url: 'uploads/bachelors-thesis/bachelors-thesis-presentation.pdf'
+        url: /uploads/bachelors-thesis/bachelors-thesis-presentation.pdf
         icon: 'presentation-chart-bar'
 
 # Skills

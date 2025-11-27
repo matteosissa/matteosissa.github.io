@@ -27,7 +27,7 @@ CV_WEBSITE/
 │       └── courses/    # Courses taught
 ├── assets/             # CSS, JS, and media files
 ├── layouts/            # Custom Hugo templates
-├── static/             # Static files (uploads, etc.)
+├── static/             # Static files /uploads, etc.)
 └── public/             # Generated site (build output)
 ```
 

@@ -7,7 +7,7 @@ links:
     url: https://github.com/matteosissa/TravelBuddy
   - icon: presentation-chart-bar
     name: View Project Presentation
-    url: uploads/travelbuddy/project-presentation.pptx
+    url: /uploads/travelbuddy/project-presentation.pptx
 summary: 
 Android application that aims to connect travellers to locals to facilitate planning.
 image:

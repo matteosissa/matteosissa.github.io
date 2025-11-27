@@ -10,10 +10,10 @@ links:
     url: https://github.com/matteosissa/MiLA_Website
   - icon: 'arrow-down-tray'
     name: Read Design Report
-    url: uploads/mila-website/design-report.pdf
+    url: /uploads/mila-website/design-report.pdf
   - icon: 'arrow-down-tray'
     name: Read Technology Report
-    url: uploads/mila-website/technology-report.pdf
+    url: /uploads/mila-website/technology-report.pdf
 summary: 
 Web application developed with NuxtJS for a volunteering association fighting against women's violence and abuse.
 image:
