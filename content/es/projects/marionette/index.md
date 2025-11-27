@@ -3,17 +3,20 @@ title: Marionette
 date: 2025-10-23
 links:
   - icon: brands/github
-    name: Ver Código Fuente
-    url: https://github.com/matteosissa/Marionette
-  - icon: 'arrow-down-tray'
-    name: Leer Tesis
+    name: Paquete de Replicación
+    url: https://github.com/matteosissa/MarionetteReplicationPackage
+  - icon: brands/github
+    name: Marionettist 
+    url: https://github.com/matteosissa/Marionettist  
+  - icon: brands/github
+    name: Herramienta Marionette
+    url: https://github.com/matteosissa/MarionetteTool
+  - name: Leer Tesis
     url: /uploads/masters-thesis/masters-thesis.pdf
-  - icon: presentation-chart-bar
-    name: Ver Presentación
+    icon: 'arrow-down-tray'
+  - name: Ver Presentación
     url: /uploads/masters-thesis/masters-thesis-presentation.pptx
-  - icon: 'arrow-down-tray'
-    name: Leer Artículo de Investigación
-    url: /uploads/masters-thesis/research-paper.pdf
+    icon: 'presentation-chart-bar'
 summary: 
 Marionette es un framework para inyectar configuración de comportamiento en tiempo de ejecución en aplicaciones de microservicios para pruebas A/B/n.
 image:
@@ -33,7 +36,7 @@ authors:
   - admin
 ---
 
-Marionette es un framework para inyectar **configuración de comportamiento en tiempo de ejecución** en aplicaciones de microservicios para **pruebas A/B/n**. Fue desarrollado en el contexto de mi tesis de máster en el **Politecnico di Milano**. El trabajo de investigación detrás de Marionette fue [presentado]/uploads/masters-thesis/research-paper.pdf) en [SISTEDES](https://2025.sistedes.es/), la conferencia más importante de **ingeniería de software** de España.
+Marionette es un framework para inyectar **configuración de comportamiento en tiempo de ejecución** en aplicaciones de microservicios para **pruebas A/B/n**. Fue desarrollado en el contexto de mi tesis de máster en el **Politecnico di Milano**.
 
 ### 🎯 Objetivo del Proyecto
 
