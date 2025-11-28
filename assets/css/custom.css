@@ -70,6 +70,30 @@
   }
 }
 
+/* ============================================
+   PROTECT PROFILE IMAGE FROM DOWNLOADING
+   ============================================ */
+
+/* Prevent selection, dragging, and right-click on avatar images */
+.avatar-wrapper img,
+.no-select-image {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -khtml-user-drag: none !important;
+  -moz-user-drag: none !important;
+  -o-user-drag: none !important;
+  user-drag: none !important;
+  pointer-events: none !important;
+}
+
+/* Re-enable pointer events on the wrapper so other interactions still work */
+.avatar-wrapper {
+  pointer-events: auto !important;
+}
+
 /* Fix project page navigation buttons on mobile - keep them on same line */
 /* Only apply on mobile/small screens, let medium+ screens use default behavior */
 @media (max-width: 767px) {
