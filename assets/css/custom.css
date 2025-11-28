@@ -17,23 +17,56 @@
   }
 }
 
-/* Reduce avatar/profile image size on mobile */
+/* ============================================
+   MOBILE BIOGRAPHY SECTION CUSTOMIZATION
+   ============================================ */
+
 @media (max-width: 950px) {
-  .avatar-wrapper {
-    width: 200px !important;
-    height: 200px !important;
+  
+  /* 1. TOP PADDING - Reduce space above biography section
+     - Default: py-8 (2rem top and bottom)
+     - Adjust padding-top value to reduce top space
+     - Values: 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem, 3rem, etc.
+  */
+  .resume-biography {
+    padding-top: 0rem !important; /* ADJUST THIS: smaller = less space on top */
   }
   
-  /* Ensure the image inside maintains proper dimensions */
+  /* 2. AVATAR SIZE - Make profile image bigger
+     - Current: 200px x 200px
+     - Increase both width and height together
+     - Recommended range: 200px - 300px
+  */
+  .avatar-wrapper {
+    width: 265px !important; /* ADJUST THIS: increase for bigger image */
+    height: 265px !important; /* ADJUST THIS: increase for bigger image */
+  }
+  
   .avatar-wrapper img {
-    width: 200px !important;
-    height: 200px !important;
+    width: 265px !important; /* ADJUST THIS: match avatar-wrapper width */
+    height: 265px !important; /* ADJUST THIS: match avatar-wrapper height */
     object-fit: cover !important;
   }
   
-  /* Reduce spacing between header components (avatar, social icons, etc.) */
+  /* 3. SPACING BETWEEN ELEMENTS - Reduce gaps between avatar, name, role, etc.
+     - Default gap: 4rem (64px between elements)
+     - Smaller values bring elements closer together
+     - Values: 1rem (16px), 1.5rem (24px), 2rem (32px), 2.5rem (40px), 3rem (48px)
+  */
   .resume-biography .md\:col-span-4.flex.flex-col {
-    gap: 2rem !important;
+    gap: 0.8rem !important; /* ADJUST THIS: smaller = tighter spacing */
+  }
+  
+  /* 4. SPACING WITHIN NAME/ROLE BLOCK - Reduce space between name, role, institution
+     - This controls vertical spacing in the text block
+     - Values: 0.5rem, 0.75rem, 1rem, 1.25rem
+  */
+  .resume-biography .space-y-3 {
+    gap: 0.8rem !important; /* ADJUST THIS: smaller = less space between text lines */
+  }
+  
+  .resume-biography .space-y-3 > * + * {
+    margin-top: 0.8rem !important; /* ADJUST THIS: match gap value above */
   }
 }
 
