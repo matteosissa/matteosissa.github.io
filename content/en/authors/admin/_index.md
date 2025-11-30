@@ -94,7 +94,7 @@ education:
       Graduated from a high school focused on STEM subjects (mathematics and science). Awarded as *Speaker of the Year* in 2019 at the national philosophy competition *Romanae Disputationes*.
 
 work:
-  - position: Master's Thesis University Research
+  - position: Master's Thesis University Researcher
     company_name: "Politecnico di Milano"
     company_url: 'https://www.polimi.it/'
     icon: 'hero/academic-cap'
@@ -127,7 +127,7 @@ work:
       - text: Final Presentation
         url: /uploads/abb-opc-ua/final-presentation.pptx
         icon: 'presentation-chart-bar'
-  - position: Bachelor's Thesis University Research
+  - position: Bachelor's Thesis University Researcher
     company_name: Università degli studi di Modena e Reggio Emilia
     company_url: 'https://www.unimore.it/it'
     icon: 'hero/academic-cap'
