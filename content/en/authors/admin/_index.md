@@ -142,7 +142,13 @@ work:
       - text: View Presentation
         url: /uploads/bachelors-thesis/bachelors-thesis-presentation.pdf
         icon: 'presentation-chart-bar'
-
+  - position: Student Tutor
+    company_name: Self-employed
+    icon: 'hero/users'
+    date_start: 01 May 2023
+    date_end: 01 Oct 2024
+    summary: |
+      Helped more than 5 students pass their exams on computer science topics and increase their grades.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
