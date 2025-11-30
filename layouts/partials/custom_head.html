@@ -16,12 +16,12 @@
   {{ if $avatar }}
   "image": {
     "@type": "ImageObject",
-    "url": "{{ $avatar.Permalink }}",
+    "url": "{{ $avatar.Permalink | absURL }}",
     "width": "{{ $avatar.Width }}",
     "height": "{{ $avatar.Height }}"
   },
   {{ else }}
-  "image": "{{ site.BaseURL }}media/icon.png",
+  "image": "{{ "media/icon.png" | absURL }}",
   {{ end }}
   "sameAs": [
     {{ range $index, $profile := $person_data.profiles }}
@@ -62,12 +62,15 @@
 <meta property="profile:first_name" content="{{ $person_data.first_name }}">
 <meta property="profile:last_name" content="{{ $person_data.last_name }}">
 {{ if $avatar }}
-<meta property="og:image" content="{{ $avatar.Permalink }}">
+<meta property="og:image" content="{{ $avatar.Permalink | absURL }}">
+<meta property="og:image:secure_url" content="{{ $avatar.Permalink | absURL }}">
 <meta property="og:image:width" content="{{ $avatar.Width }}">
 <meta property="og:image:height" content="{{ $avatar.Height }}">
 <meta property="og:image:type" content="image/png">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{{ $avatar.Permalink }}">
+<meta property="og:image:alt" content="{{ $person_data.title }} - {{ $person_data.role }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ $avatar.Permalink | absURL }}">
+<meta name="twitter:image:alt" content="{{ $person_data.title }} - {{ $person_data.role }}">
 {{ end }}
 
 {{/* Additional SEO meta tags */}}

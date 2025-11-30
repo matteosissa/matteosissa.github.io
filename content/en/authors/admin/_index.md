@@ -92,6 +92,7 @@ education:
     final_grade: "100/100"
     summary: |
       Graduated from a high school focused on STEM subjects (mathematics and science). Awarded as <a href="/uploads/romanae-disputationes/newspaper.png" target="_blank" rel="noopener">*Speaker of the Year*</a> in 2019 at the national philosophy competition *Romanae Disputationes*.
+# Note: link added with HTML to make image open on a new page
 
 
 work:
