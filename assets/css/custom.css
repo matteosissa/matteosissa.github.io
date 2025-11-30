@@ -3,6 +3,12 @@
   display: none !important;
 }
 
+/* Make links in prose content blend with surrounding text */
+.prose a {
+  font-weight: normal !important;
+  color: inherit !important;
+}
+
 /* Reduce site title/name font size in header on narrow mobile screens */
 @media (max-width: 640px) {
   .navbar-brand {

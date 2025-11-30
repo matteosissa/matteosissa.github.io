@@ -91,7 +91,7 @@ education:
     date_end: 20 Jun 2020
     final_grade: "100/100"
     summary: |
-      Graduated from a high school focused on STEM subjects (mathematics and science). Awarded as *Speaker of the Year* in 2019 at the national philosophy competition *Romanae Disputationes*.
+      Graduated from a high school focused on STEM subjects (mathematics and science). Awarded as [*Speaker of the Year*](/uploads/romanae-disputationes/newspaper.png) in 2019 at the national philosophy competition *Romanae Disputationes*.
 
 work:
   - position: Master's Thesis University Researcher
