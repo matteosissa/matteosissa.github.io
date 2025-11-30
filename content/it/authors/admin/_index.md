@@ -83,6 +83,15 @@ education:
     date_end: 30 Jan 2023
     summary: |
       Specializzazione in corsi di ingegneria del software e sicurezza informatica.
+  - area: Diploma di Liceo Scientifico
+    institution: Liceo Scientifico A. Tassoni, Modena
+    institution_url: "https://www.liceotassoni.edu.it/"
+    icon: "hero/academic-cap"
+    date_start: 15 Sep 2015
+    date_end: 20 Jun 2020
+    final_grade: "100/100"
+    summary: |
+      Diplomato presso un liceo incentrato sulle materie STEM (matematica e scienze). Premiato come *Oratore dell'Anno* nel 2019 al concorso nazionale di filosofia *Romanae Disputationes*.
 
 work:
   - position: Ricerca Universitaria - Tesi Magistrale

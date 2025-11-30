@@ -83,6 +83,15 @@ education:
     date_end: 30 Jan 2023
     summary: |
       Especialización en cursos de ingeniería de software y seguridad informática.
+  - area: Graduación de Bachillerato Científico
+    institution: Liceo Scientifico A. Tassoni, Módena
+    institution_url: "https://www.liceotassoni.edu.it/"
+    icon: "hero/academic-cap"
+    date_start: 15 Sep 2015
+    date_end: 20 Jun 2020
+    final_grade: "100/100"
+    summary: |
+      Graduado de un instituto de educación secundaria centrado en materias STEM (matemáticas y ciencias). Galardonado como *Orador del Año* en 2019 en el concurso nacional de filosofía *Romanae Disputationes*.
 
 work:
   - position: Investigación Universitaria - Tesis de Máster

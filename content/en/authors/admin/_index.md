@@ -83,6 +83,15 @@ education:
     date_end: 30 Jan 2023
     summary: |
       Specialised in some courses on software engineering and computer security.
+  - area: Scientific High School Graduation
+    institution: Liceo Scientifico A. Tassoni, Modena
+    institution_url: "https://www.liceotassoni.edu.it/"
+    icon: "hero/academic-cap"
+    date_start: 15 Sep 2015
+    date_end: 20 Jun 2020
+    final_grade: "100/100"
+    summary: |
+      Graduated from a high school focused on STEM subjects (mathematics and science). Awarded as *Speaker of the Year* in 2019 at the national philosophy competition *Romanae Disputationes*.
 
 work:
   - position: Master's Thesis University Research
@@ -133,6 +142,7 @@ work:
       - text: View Presentation
         url: /uploads/bachelors-thesis/bachelors-thesis-presentation.pdf
         icon: 'presentation-chart-bar'
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
