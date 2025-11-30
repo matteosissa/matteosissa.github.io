@@ -142,6 +142,13 @@ work:
       - text: Visualizza Presentazione
         url: /uploads/bachelors-thesis/bachelors-thesis-presentation.pdf
         icon: 'presentation-chart-bar'
+  - position: Tutor Studenti
+    company_name: Libero professionista
+    icon: 'hero/users'
+    date_start: 01 May 2023
+    date_end: 01 Oct 2024
+    summary: |
+      Ho aiutato più di 5 studenti a superare i loro esami su argomenti di informatica e a migliorare i loro voti.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`

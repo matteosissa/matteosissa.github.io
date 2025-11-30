@@ -142,6 +142,13 @@ work:
       - text: Ver Presentación
         url: /uploads/bachelors-thesis/bachelors-thesis-presentation.pdf
         icon: 'presentation-chart-bar'
+  - position: Tutor Estudiantes
+    company_name: Autónomo
+    icon: 'hero/users'
+    date_start: 01 May 2023
+    date_end: 01 Oct 2024
+    summary: |
+      Ayudé a más de 5 estudiantes a aprobar sus exámenes sobre temas de informática y mejorar sus calificaciones.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
