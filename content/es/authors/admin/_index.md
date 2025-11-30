@@ -91,7 +91,7 @@ education:
     date_end: 20 Jun 2020
     final_grade: "100/100"
     summary: |
-      Graduado de un instituto de educación secundaria centrado en materias STEM (matemáticas y ciencias). Galardonado como [Orador del Año](/uploads/resume.pdf) en 2019 en el concurso nacional de filosofía *Romanae Disputationes*.
+      Graduado de un instituto de educación secundaria centrado en materias STEM (matemáticas y ciencias). Galardonado como <a href="/uploads/romanae-disputationes/newspaper.png" target="_blank" rel="noopener">*Orador del Año*</a> en 2019 en el concurso nacional de filosofía *Romanae Disputationes*.
 
 work:
   - position: Investigación Universitaria - Tesis de Máster

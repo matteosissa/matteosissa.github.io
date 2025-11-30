@@ -91,7 +91,7 @@ education:
     date_end: 20 Jun 2020
     final_grade: "100/100"
     summary: |
-      Diplomato presso un liceo incentrato sulle materie STEM (matematica e scienze). Premiato come [Oratore dell'Anno](/uploads/resume.pdf) nel 2019 al concorso nazionale di filosofia *Romanae Disputationes*.
+      Diplomato presso un liceo incentrato sulle materie STEM (matematica e scienze). Premiato come <a href="/uploads/romanae-disputationes/newspaper.png" target="_blank" rel="noopener">*Oratore dell'Anno*</a> nel 2019 al concorso nazionale di filosofia *Romanae Disputationes*.
 
 work:
   - position: Ricerca Universitaria - Tesi Magistrale
