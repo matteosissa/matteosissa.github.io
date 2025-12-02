@@ -58,6 +58,10 @@ education:
     final_grade: "110/110 e lode"
     summary: |
       Laureato con il massimo dei voti e la lode. Tesi su _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Relatore: Prof. Matteo Camilli.
+    buttons:
+      - text: Supplemento al Diploma
+        url: /uploads/diploma-supplements//master/ds-polimi-it.pdf
+        icon: 'arrow-down-tray'
   - area: Semestre di Scambio
     institution: Universitat Politècnica de València, Spagna
     institution_url: "https://www.upv.es/"
@@ -75,6 +79,10 @@ education:
     final_grade: "110/110 e lode"
     summary: |
       Laureato con il massimo dei voti e la lode. Tesi su _Cross-compiling Java-FX projects on Android devices._ Relatore: Prof. Nicola Bicocchi.
+    buttons:
+      - text: Supplemento al Diploma
+        url: /uploads/diploma-supplements//bachelor/ds-unimore-it.pdf
+        icon: 'arrow-down-tray'
   - area: Semestre di Scambio
     institution: University of Exeter, Regno Unito
     institution_url: "https://www.exeter.ac.uk/"
@@ -253,4 +261,4 @@ languages:
 #       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Nato a **Modena, Italia** nel **2001**, sono un **Ingegnere del Software** e laureato magistrale dal **Politecnico di Milano**, dove ho completato il mio **Master** con lode nel 2025. La mia tesi ha introdotto un approccio innovativo per iniettare punti di variabilità comportamentale in applicazioni microservizi, ed è stata presentata a **SISTEDES**, la conferenza principale della Spagna sull'ingegneria del software. Ho inoltre collaborato con **ABB** a un progetto **basato su SCRUM** per la progettazione di protocolli di sicurezza per sistemi di comunicazione tra macchine. Il mio obiettivo è padroneggiare l'**architettura del software** e i **design pattern** per creare sistemi facili da **mantenere**, **scalare** e **comprendere** - adattando sempre il design giusto ad ogni sfida unica.
+Sono un **Ingegnere del Software** nato a **Modena, Italia (2001)**, e laureato magistrale dal **Politecnico di Milano**, dove ho completato il mio **Master** con lode nel 2025. La mia tesi ha introdotto un approccio innovativo per iniettare punti di variabilità comportamentale in applicazioni microservizi, ed è stata presentata a **SISTEDES**, la conferenza principale della Spagna sull'ingegneria del software. Ho inoltre collaborato con **ABB** a un progetto **basato su SCRUM** per la progettazione di protocolli di sicurezza per sistemi di comunicazione tra macchine. Il mio obiettivo è padroneggiare l'**architettura del software** e i **design pattern** per creare sistemi facili da **mantenere**, **scalare** e **comprendere** - adattando sempre il design giusto ad ogni sfida unica.

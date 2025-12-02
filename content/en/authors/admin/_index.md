@@ -57,7 +57,11 @@ education:
     date_end: 23 Oct 2025
     final_grade: "110/110 cum laude"
     summary: |
-      Graduated with full marks and honours. Thesis on  _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervised by Prof. Matteo Camilli. 
+      Graduated with full marks and honours. Thesis on  _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervised by Prof. Matteo Camilli.
+    buttons:
+      - text: Diploma Supplement
+        url: /uploads/diploma-supplements//master/ds-polimi-en.pdf
+        icon: 'arrow-down-tray'
   - area: Exchange Semester 
     institution: Universitat Politècnica de València, Spain
     institution_url: "https://www.upv.es/"
@@ -75,6 +79,10 @@ education:
     final_grade: "110/110 cum laude"
     summary: |
       Graduated with full marks and honours. Thesis on  _Cross-compiling Java-FX projects on Android devices._ Supervised by Prof. Nicola Bicocchi.
+    buttons:
+      - text: Diploma Supplement
+        url: /uploads/diploma-supplements//bachelor/ds-unimore-en.pdf
+        icon: 'arrow-down-tray'
   - area: Exchange Semester
     institution: University of Exeter, United Kingdom
     institution_url: "https://www.exeter.ac.uk/"
@@ -255,4 +263,4 @@ languages:
 #       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Born in **Modena, Italy** in **2001**, I'm a **Software Engineer** and recent graduate from **Politecnico di Milano**, where I completed my **Master's degree** with honors in 2025. My thesis introduced a novel approach to injecting behavioral variability points into microservice applications, and was presented at **SISTEDES**, Spain's premier conference on software engineering. I've also collaborated with **ABB** on a **SCRUM-based** project designing security protocols for machine communication systems. My goal is to master **software architecture** and **design patterns** to create systems that are easy to **maintain**, **scale** and **understand** - always matching the right design to each unique challenge.
+I'm a **Software Engineer** born in **Modena, Italy (2001)**, and a recent graduate from **Politecnico di Milano**, where I completed my **Master's degree** with honors in 2025. My thesis introduced a novel approach to injecting behavioral variability points into microservice applications, and was presented at **SISTEDES**, Spain's premier conference on software engineering. I've also collaborated with **ABB** on a **SCRUM-based** project designing security protocols for machine communication systems. My goal is to master **software architecture** and **design patterns** to create systems that are easy to **maintain**, **scale** and **understand** - always matching the right design to each unique challenge.

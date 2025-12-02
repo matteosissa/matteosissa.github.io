@@ -57,7 +57,11 @@ education:
     date_end: 23 Oct 2025
     final_grade: "110/110 con matrícula de honor"
     summary: |
-      Graduado con las máximas calificaciones y matrícula de honor. Tesis sobre _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervisor: Prof. Matteo Camilli. 
+      Graduado con las máximas calificaciones y matrícula de honor. Tesis sobre _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervisor: Prof. Matteo Camilli.
+    buttons:
+      - text: Diploma Supplement
+        url: /uploads/diploma-supplements//master/ds-polimi-en.pdf
+        icon: 'arrow-down-tray'
   - area: Semestre de Intercambio
     institution: Universitat Politècnica de València, España
     institution_url: "https://www.upv.es/"
@@ -75,6 +79,10 @@ education:
     final_grade: "110/110 con matrícula de honor"
     summary: |
       Graduado con las máximas calificaciones y matrícula de honor. Tesis sobre _Cross-compiling Java-FX projects on Android devices._ Supervisor: Prof. Nicola Bicocchi.
+    buttons:
+      - text: Diploma Supplement
+        url: /uploads/diploma-supplements//bachelor/ds-unimore-en.pdf
+        icon: 'arrow-down-tray'
   - area: Semestre de Intercambio
     institution: University of Exeter, Reino Unido
     institution_url: "https://www.exeter.ac.uk/"
@@ -253,4 +261,4 @@ languages:
 #       Recognized for contributions to scaling laws in deep learning.
 ---
 
-Nacido en **Módena, Italia** en **2001**, soy un **Ingeniero de Software** y recién graduado del **Politecnico di Milano**, donde completé mi **Máster** con matrícula de honor en 2025. Mi tesis introdujo un enfoque novedoso para inyectar puntos de variabilidad de comportamiento en aplicaciones de microservicios, y fue presentada en **SISTEDES**, la conferencia más importante de ingeniería de software de España. También he colaborado con **ABB** en un proyecto **basado en SCRUM** diseñando protocolos de seguridad para sistemas de comunicación entre máquinas. Mi objetivo es dominar la **arquitectura de software** y los **patrones de diseño** para crear sistemas que sean fáciles de **mantener**, **escalar** y **comprender** - siempre adaptando el diseño correcto a cada desafío único.
+Soy un **Ingeniero de Software** nacido en **Módena, Italia (2001)**, y recién graduado del **Politecnico di Milano**, donde completé mi **Máster** con matrícula de honor en 2025. Mi tesis introdujo un enfoque novedoso para inyectar puntos de variabilidad de comportamiento en aplicaciones de microservicios, y fue presentada en **SISTEDES**, la conferencia más importante de ingeniería de software de España. También he colaborado con **ABB** en un proyecto **basado en SCRUM** diseñando protocolos de seguridad para sistemas de comunicación entre máquinas. Mi objetivo es dominar la **arquitectura de software** y los **patrones de diseño** para crear sistemas que sean fáciles de **mantener**, **escalar** y **comprender** - siempre adaptando el diseño correcto a cada desafío único.
