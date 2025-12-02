@@ -104,6 +104,12 @@
   .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-before > div:last-child {
     text-align: right;
   }
+
+  /* Fix education section padding to match experience section alignment */
+  .work-education-grid > div[style*="padding-right"][style*="padding-left"] {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
 }
 
 /* VERY NARROW SCREENS (iPhone SE, etc.) */
