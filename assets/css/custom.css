@@ -10,7 +10,7 @@
 }
 
 /* Override Tailwind md: breakpoint from 768px to 1024px */
-@media (min-width: 768px) and (max-width: 1090px) {
+@media (min-width: 768px) and (max-width: 1180px) {
   .md\:grid-cols-12,
   .md\:grid-cols-2,
   .md\:grid-cols-3 {
@@ -57,6 +57,22 @@
   .work-education-grid > div {
     padding-left: 2.5rem !important;
     padding-right: 2.5rem !important;
+  }
+  
+  /* Constrain skill cards width and center them */
+  .skill-card {
+    width: 300px !important;
+    max-width: 100% !important;
+  }
+  
+  /* Center skill cards in their grid cells */
+  .skills-grid {
+    justify-items: center !important;
+  }
+  
+  /* Stack skills and languages vertically instead of side-by-side */
+  .skills-languages-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 
