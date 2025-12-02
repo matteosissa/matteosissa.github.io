@@ -9,7 +9,7 @@
   color: inherit !important;
 }
 
-/* Override Tailwind md: breakpoint from 768px to 1024px */
+/* MEDIUM-SIZED SCREENS (Tablets in portrait) */
 @media (min-width: 768px) and (max-width: 1180px) {
   /* Only override grid columns for biography, not skills */
   .resume-biography .md\:grid-cols-12 {
@@ -79,70 +79,69 @@
   }
 }
 
-/* Reduce site title/name font size in header on narrow mobile screens */
-@media (max-width: 640px) {
+/* MOBILE SCREENS */
+@media (max-width: 767px) {
+  /* Reduce site title/name font size in header */
   .navbar-brand {
-    font-size: 1.125rem !important; /* Reduced from default (18px) */
+    font-size: 1.125rem !important;
+  }
+  
+  /* Fix project page navigation buttons - keep them on same line */
+  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+
+  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between > div {
+    flex: 0 1 auto;
+    max-width: 48%;
+  }
+
+  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between > div:first-child {
+    text-align: left;
+  }
+
+  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-before > div:last-child {
+    text-align: right;
   }
 }
 
-/* Further reduce on very narrow screens (e.g., iPhone SE) */
+/* VERY NARROW SCREENS (iPhone SE, etc.) */
 @media (max-width: 375px) {
   .navbar-brand {
-    font-size: 1rem !important; /* Even smaller for very narrow screens (16px) */
+    font-size: 1rem !important;
   }
 }
 
-/* ============================================
-   MOBILE BIOGRAPHY SECTION CUSTOMIZATION
-   ============================================ */
-
+/* MOBILE BIOGRAPHY SECTION CUSTOMIZATION */
 @media (max-width: 950px) {
-  
-  /* 1. TOP PADDING - Reduce space above biography section
-     - Default: py-8 (2rem top and bottom)
-     - Adjust padding-top value to reduce top space
-     - Values: 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem, 3rem, etc.
-  */
   .resume-biography {
-    padding-top: 0rem !important; /* ADJUST THIS: smaller = less space on top */
+    padding-top: 0rem !important;
   }
   
-  /* 2. AVATAR SIZE - Make profile image bigger
-     - Current: 200px x 200px
-     - Increase both width and height together
-     - Recommended range: 200px - 300px
-  */
+  /* Avatar sizing */
   .avatar-wrapper {
-    width: 265px !important; /* ADJUST THIS: increase for bigger image */
-    height: 265px !important; /* ADJUST THIS: increase for bigger image */
+    width: 265px !important;
+    height: 265px !important;
   }
   
   .avatar-wrapper img {
-    width: 265px !important; /* ADJUST THIS: match avatar-wrapper width */
-    height: 265px !important; /* ADJUST THIS: match avatar-wrapper height */
+    width: 265px !important;
+    height: 265px !important;
     object-fit: cover !important;
   }
   
-  /* 3. SPACING BETWEEN ELEMENTS - Reduce gaps between avatar, name, role, etc.
-     - Default gap: 4rem (64px between elements)
-     - Smaller values bring elements closer together
-     - Values: 1rem (16px), 1.5rem (24px), 2rem (32px), 2.5rem (40px), 3rem (48px)
-  */
+  /* Element spacing */
   .resume-biography .md\:col-span-4.flex.flex-col {
-    gap: 0.8rem !important; /* ADJUST THIS: smaller = tighter spacing */
+    gap: 0.8rem !important;
   }
   
-  /* 4. SPACING WITHIN NAME/ROLE BLOCK - Reduce space between name, role, institution
-     - This controls vertical spacing in the text block
-     - Values: 0.5rem, 0.75rem, 1rem, 1.25rem
-  */
   .resume-biography .space-y-3 {
-    gap: 0.8rem !important; /* ADJUST THIS: smaller = less space between text lines */
+    gap: 0.8rem !important;
   }
   
   .resume-biography .space-y-3 > * + * {
-    margin-top: 0.8rem !important; /* ADJUST THIS: match gap value above */
+    margin-top: 0.8rem !important;
   }
 }
 
@@ -170,53 +169,16 @@
   pointer-events: auto !important;
 }
 
-/* Fix project page navigation buttons on mobile - keep them on same line */
-/* Only apply on mobile/small screens, let medium+ screens use default behavior */
-@media (max-width: 767px) {
-  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between {
-    flex-direction: row !important;
-    justify-content: space-between !important;
-  }
-
-  /* Ensure navigation links have proper spacing on mobile */
-  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between > div {
-    flex: 0 1 auto;
-    max-width: 48%;
-  }
-
-  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between > div:first-child {
-    text-align: left;
-  }
-
-  .no-prose .flex.flex-col.md\:flex-row.flex-nowrap.justify-between > div:last-child {
-    text-align: right;
-  }
-}
-
-/* Fix tag display - allow wrapping and prevent multi-line text in tags */
-.flex.justify-center a[href^="/tags/"] {
-  white-space: nowrap !important;
-  display: inline-flex !important;
-  align-items: center !important;
-}
-
-.flex.justify-center {
-  flex-wrap: wrap !important;
-  gap: 0.5rem !important;
-}
-
-/* Center skills section titles on mobile */
+/* MOBILE & TABLET - Floating menu and centered skills titles */
 @media (max-width: 1023px) {
+  /* Center skills section titles */
   .skills-column-padding .flex.flex-col.items-center .text-3xl,
   .languages-column-padding .flex.flex-col.items-center .text-3xl {
     text-align: center !important;
     width: 100% !important;
   }
-}
 
-/* Mobile Floating Menu Button - Only on mobile devices */
-@media (max-width: 1023px) {
-  /* Make the label into a floating action button (FAB) in bottom-right corner */
+  /* Mobile Floating Menu Button */
   .navbar label[for="nav-toggle"] {
     position: fixed !important;
     bottom: 24px !important;
@@ -235,12 +197,10 @@
     order: unset !important;
   }
   
-  /* Hide the original SVG icons inside the label */
   .navbar label[for="nav-toggle"] svg {
     display: none !important;
   }
   
-  /* Add hamburger menu icon using CSS */
   .navbar label[for="nav-toggle"]::before {
     content: '';
     width: 24px;
@@ -251,22 +211,19 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  /* Change icon to X when menu is open */
   #nav-toggle:checked + label[for="nav-toggle"]::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
     transform: rotate(90deg);
   }
   
-  /* FAB hover effect */
   .navbar label[for="nav-toggle"]:hover {
     transform: scale(1.1) !important;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 12px 32px rgba(102, 126, 234, 0.5) !important;
   }
   
-  /* Style the mobile menu when opened - compact panel instead of full screen */
   #nav-menu {
     position: fixed;
-    bottom: 96px; /* Above the FAB button */
+    bottom: 96px;
     right: 24px;
     width: auto;
     min-width: 200px;
@@ -286,20 +243,17 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  /* Dark mode menu background */
   .dark #nav-menu {
     background: rgba(31, 41, 55, 0.98);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   }
   
-  /* Show menu when checkbox is checked */
   #nav-toggle:checked ~ #nav-menu {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0) scale(1);
   }
   
-  /* Style menu items for mobile */
   #nav-menu .nav-item {
     opacity: 1;
     transform: none;
