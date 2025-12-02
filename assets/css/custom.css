@@ -46,6 +46,12 @@
   .resume-biography .space-y-3 > * + * {
     margin-top: 0.8rem !important;
   }
+  
+  /* Add horizontal padding to biography content */
+  .resume-biography .md\:col-span-8 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 }
 
 /* Reduce site title/name font size in header on narrow mobile screens */
