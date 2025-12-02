@@ -57,7 +57,7 @@ education:
     date_end: 23 Oct 2025
     final_grade: "110/110 e lode"
     summary: |
-      Laureato con il massimo dei voti e la lode. Tesi su _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Relatore: Prof. Matteo Camilli. Il lavoro è stato presentato a SISTEDES, nota conferenza di ingegneria del software in Spagna.
+      Laureato con il massimo dei voti e la lode. Tesi su _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Relatore: Prof. Matteo Camilli.
   - area: Semestre di Scambio
     institution: Universitat Politècnica de València, Spagna
     institution_url: "https://www.upv.es/"
@@ -101,7 +101,7 @@ work:
     date_start: 01 Feb 2025
     date_end: 23 Oct 2025
     summary: |
-      Titolo Tesi: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._"
+      Titolo Tesi: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._" Il lavoro è stato presentato a [SISTEDES](https://www.sistedes.es/), nota conferenza di ingegneria del software in Spagna.
     buttons:
       - text: Leggi Tesi
         url: /uploads/masters-thesis/masters-thesis.pdf

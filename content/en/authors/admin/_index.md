@@ -57,7 +57,7 @@ education:
     date_end: 23 Oct 2025
     final_grade: "110/110 cum laude"
     summary: |
-      Graduated with full marks and honours. Thesis on  _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervised by Prof. Matteo Camilli. The work was presented at SISTEDES, well-established software engineering conference in Spain.
+      Graduated with full marks and honours. Thesis on  _Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._ Supervised by Prof. Matteo Camilli. 
   - area: Exchange Semester 
     institution: Universitat Politècnica de València, Spain
     institution_url: "https://www.upv.es/"
@@ -103,7 +103,7 @@ work:
     date_start: 01 Feb 2025
     date_end: 23 Oct 2025
     summary: |
-      Thesis Title: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._"
+      Thesis Title: "_Marionette: Runtime Behavioural Configuration and A/B/n Testing for Microservice Systems._" The work was presented at [SISTEDES](https://www.sistedes.es/), well-established software engineering conference in Spain.
     buttons:
       - text: Read Thesis
         url: /uploads/masters-thesis/masters-thesis.pdf
