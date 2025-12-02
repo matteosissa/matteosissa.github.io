@@ -11,8 +11,11 @@
 
 /* Override Tailwind md: breakpoint from 768px to 1024px */
 @media (min-width: 768px) and (max-width: 1180px) {
-  .md\:grid-cols-12,
-  .md\:grid-cols-2,
+  /* Only override grid columns for biography, not skills */
+  .resume-biography .md\:grid-cols-12 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  
   .md\:grid-cols-3 {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
