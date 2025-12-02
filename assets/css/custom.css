@@ -52,6 +52,12 @@
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
+  
+  /* Add horizontal padding to work/education sections */
+  .work-education-grid > div {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
 }
 
 /* Reduce site title/name font size in header on narrow mobile screens */
