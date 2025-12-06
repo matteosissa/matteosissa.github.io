@@ -9,6 +9,20 @@
   color: inherit !important;
 }
 
+/* Fix tag display on project pages - allow wrapping to multiple lines */
+.flex.justify-center {
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+}
+
+/* Ensure individual tags don't wrap their text */
+.flex.justify-center a[href^="/tags/"],
+.flex.justify-center a[href^="/en/tags/"],
+.flex.justify-center a[href^="/es/tags/"],
+.flex.justify-center a[href^="/it/tags/"] {
+  white-space: nowrap !important;
+}
+
 /* MEDIUM-SIZED SCREENS (Tablets in portrait) */
 @media (min-width: 768px) and (max-width: 1180px) {
   /* Only override grid columns for biography, not skills */
