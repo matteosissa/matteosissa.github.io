@@ -5,19 +5,16 @@ links:
   - icon: brands/github
     name: View Source Code
     url: https://github.com/matteosissa/CodeKataBattleProject
-  - icon: brands/github
-    name: Marionettist 
-    url: https://github.com/matteosissa/Marionettist  
-  - icon: brands/github
-    name: Marionette Tool
-    url: https://github.com/matteosissa/MarionetteTool
-  - name: Read Thesis
-    url: /uploads/masters-thesis/masters-thesis.pdf
+  - name: Read Assignment
+    url: /uploads/codekatabattle/assignment.pdf
     icon: 'arrow-down-tray'
-  - name: View Presentation
-    url: /uploads/masters-thesis/masters-thesis-presentation.pptx
-    icon: 'presentation-chart-bar'
-summary: Master's thesis project focusing on developing a framework to inject behavioural variability points in the codebase of a microservice-based application.
+  - name: Requirements Analysis Doc
+    url: /uploads/codekatabattle/requirements-analysis-document.pdf
+    icon: 'arrow-down-tray'  
+  - name: Design Document
+    url: /uploads/codekatabattle/design-document.pdf
+    icon: 'arrow-down-tray'
+summary: Java Spring project aiming to create a platform for competitive coding tournaments. Developed with a waterfall approach.
 
 
 image:
@@ -25,40 +22,38 @@ image:
 tags:
   - Java Spring
   - Java
-  - Microservices
-  - Kubernetes
-  - Javascript
-  - Clean Architecture
-  - Git
-  - Docker
-  - Web
   - UML
+  - Requirements Analysis
+  - Software Design
+  - Waterfall development
+  - Kafta
+  - SonarQube
+  - Microservices
+  - Git
 authors:
   - admin
 ---
 
-The Marionette project was developed as my **master's thesis project** at **Politecnico di Milano** and it was designed in collaboration with the **Universitat Politècnica de València**, where I spent some months as an exchange student.
+CodeKataBattle is a **microservices-based platform** for competitive programming tournaments, developed as part of the **Software Engineering 2** course at **Politecnico di Milano**. The project was completed by a team of three students.
 
 ### 🎯 Project Goal
 
-Marionette aims to fill a gap in the current research landscape for microservice-based systems, which is the possibility to make the software **change in behaviour** and **adapt** without any need for code recompilation or redeployment. It also aims to **automate the comparison** of different behavioural variants based on custom metrics.
+The platform enables educators to create coding challenges and students to participate in competitive battles. It integrates with **GitHub** for code submission and uses **SonarQube** for automated evaluation of code quality and scoring.
 
-The implementation is in **Java** and it leverages a stack of various technologies: Java Spring, JavaParser, Kubernetes, Docker, Prometheus, React. The codebase can be found on the GitHub link.
+The implementation is in **Java** and leverages technologies including Java Spring, PostgreSQL, Apache Kafka, Docker, and GitHub API integration. The complete codebase can be found on GitHub.
 
-### 🏗️ The Framework
+### 🌊 Waterfall Development Methodology
 
-The Marionette framework comprises two main components that work together:
+This project stands out for its **strict adherence to the waterfall development approach**. The process began with the **stakeholder requirements** provided by the course instructors, which defined the expected functionality of the platform.
 
-**The Marionette Tool** - A source code transformation tool that enables developers to define behavioural variations for any method in the codebase (Java - JavaParser).
+From these initial requirements, the team produced a comprehensive **Requirements Analysis Document** that detailed functional and non-functional requirements, use cases, UML diagrams, and domain modeling. This document can be accessed through the link above.
 
-**The Marionettist** - A central behavioural management service providing:
+Following the analysis phase, a **Design Document** was created to guide the implementation. This included the system architecture design, microservices breakdown, component diagrams, API specifications, and design patterns to be applied.
 
-- A **simplified graphical interface** (React) for switching between predefined behaviours at runtime without recompilation.
-- **Automatic discovery** of all cluster nodes with defined variation points.
-- An **automated A/B/n testing pipeline** for comparing behavioural combinations across services and evaluating their performance impact (Docker, Kubernetes, Prometheus).
+Only after completing these documentation phases did the team proceed with the **actual implementation**, which resulted in a fully functional platform with seven interconnected microservices: Gateway, User, Tournament, Battle, GitHub Integration, Score Computation, and Notification services.
 
 ### 💯 Results and Skills Acquired
 
-This project turned out to be challenging because it involved several technologies and it covered many aspects of software development, from **full stack application design** (backend and frontend) to **operational concerns** (deployment, orchestration, networking, CICD pipelines).
-It allowed me to further explore the development of **microservice-based architectures** and the **deployment** and **orchestration** concerns related to this architectural style (Docker, Kubernetes). It was also important for me to get hands-on practice on **monitoring tools** like Prometheus and automate the process of comparison between system configurations to extract relevant data for decision-making.
-Finally, the project was fully developed following **clean architecture principles**, which I mastered while developing this system.
+This project was valuable for understanding the **traditional waterfall software development lifecycle** and the importance of comprehensive documentation before implementation. It required careful planning and coordination among team members to ensure that each phase was completed thoroughly before moving to the next.
+
+The project also provided hands-on experience with **microservices architecture**, **event-driven communication** using Kafka and **OAuth2 authentication**. Working through formal requirements analysis and design phases enhanced my ability to translate stakeholder needs into technical specifications and architectural decisions.
