@@ -12,7 +12,7 @@ links:
     url: /uploads/abb-opc-ua/final-presentation.pptx
     icon: 'presentation-chart-bar'
 summary: 
-In collaboration with ABB, a project for the implementation of a security layer on top of the publish-subscribe model offered by the OPC UA technology.
+In collaboration with ABB, a SCRUM-based project with a geographically distributed team on the OPC UA technology.
 image:
   focal_point: Center
 tags:
