@@ -165,22 +165,27 @@ work:
 skills:
   - name: Technical Skills
     items:
-      - name: Java - Java Spring
-        description: 'Microservice architectures'
+      - name: Java/Java Spring
+        # description: 'Microservice architectures'
         percent: 90
         icon: code-bracket
         url: '/tags/java/'
-      - name: Docker - Kubernetes
+      - name: Docker
         percent: 75
         icon: server-stack
+        url: '/tags/docker/'
+      - name: Kubernetes
+        icon: cube
         url: '/tags/kubernetes/'
-      - name: Web Development
-        description: 'HTML, CSS, Javascript'
+      - name: HTML/CSS
         percent: 80
-        icon: wifi
-        url: '/tags/web/'
+        icon: paint-brush
+        url: '/tags/html-css/'
+      - name: Javascript
+        percent: 80
+        icon: globe-alt
+        url: '/tags/javascript/'
       - name: UML
-        description: 'Software architecture design'
         percent: 80
         icon: squares-2x2
         url: '/tags/uml/'
@@ -188,25 +193,23 @@ skills:
         percent: 70
         icon: device-phone-mobile
         url: '/tags/android/'
-      - name: C - C++
+      - name: C/C++
         percent: 70
         icon: command-line
         url: '/tags/c/'
-      - name: Git - GitHub
+      - name: Git/GitHub
         percent: 85
         icon: arrow-path
         url: '/tags/git/'
-      - name: Agile Development - Jira
+      - name: Agile Development
         percent: 75
         icon: calendar-days
         url: '/tags/agile-development/'
       - name: SQL
-        description: 'Postgres, Supabase, Firebase, SQLite'
         percent: 70
         icon: circle-stack
         url: '/tags/sql/'
       - name: Python
-        description: 'Keras, Tensorflow'
         percent: 55
         icon: calculator
         url: '/tags/python/'

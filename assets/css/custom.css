@@ -402,9 +402,19 @@ html:not(.dark) section#skills {
   background-color: rgb(31, 31, 34) !important;
 }
 
-/* Skill card styling */
+/* Skill card styling - reduced height since percentage bars are hidden */
 .skill-card {
-  min-height: 125px; /* Ensures consistent card heights */
+  min-height: 75px; /* Smaller cards without progress bars */
+}
+
+/* Adjust skill card padding when progress bars are not shown */
+.skill-card .flex-1 {
+  padding-bottom: 0.25rem;
+}
+
+/* Reduce gap between skill cards for compact layout */
+.skills-grid {
+  gap: 0.75rem !important;
 }
 
 /* Line clamp utilities for text truncation */
