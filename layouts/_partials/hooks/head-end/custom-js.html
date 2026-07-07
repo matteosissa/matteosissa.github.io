@@ -9,3 +9,30 @@
   {{ $skillJs := $skillJs | minify | fingerprint }}
   <script src="{{ $skillJs.RelPermalink }}" defer></script>
 {{ end }}
+
+{{ $modernJs := resources.Get "js/modern.js" }}
+{{ if $modernJs }}
+  {{ $modernJs := $modernJs | minify | fingerprint }}
+  <script src="{{ $modernJs.RelPermalink }}" defer></script>
+{{ end }}
+
+{{ $termJs := resources.Get "js/terminal.js" }}
+{{ if $termJs }}
+  {{ $termJs := $termJs | minify | fingerprint }}
+  <script src="{{ $termJs.RelPermalink }}" defer></script>
+{{ end }}
+
+{{/* Engagement config: available on every page (terminal msg command, project reactions) */}}
+<script>window.MSX_ENGAGE = {{ dict
+  "key" (site.Params.engagement.web3forms_key | default "")
+  "lang" site.Language.Lang
+  "site" site.Title
+  "page" .Title
+  "isProject" (and .IsPage (eq .Section "projects"))
+}}</script>
+
+{{ $engageJs := resources.Get "js/engage.js" }}
+{{ if $engageJs }}
+  {{ $engageJs := $engageJs | minify | fingerprint }}
+  <script src="{{ $engageJs.RelPermalink }}" defer></script>
+{{ end }}

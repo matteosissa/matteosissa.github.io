@@ -58,6 +58,19 @@ sections:
       view: article-grid
       columns: 2
 
+  - block: interactive-terminal
+    id: terminal
+    content:
+      title: Terminale Interattivo
+      subtitle: Esplora il mio profilo da sviluppatore — digita un comando o tocca una scorciatoia.
+      username: admin
+      cv_url: /uploads/resume.pdf
+
+  - block: engage-contact
+    id: contact
+    content:
+      username: admin
+
   - block: resume-footer
     content:
       username: admin

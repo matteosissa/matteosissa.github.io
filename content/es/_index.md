@@ -61,6 +61,19 @@ sections:
       view: article-grid
       columns: 2
 
+  - block: interactive-terminal
+    id: terminal
+    content:
+      title: Terminal Interactiva
+      subtitle: Explora mi perfil como un desarrollador — escribe un comando o pulsa un atajo.
+      username: admin
+      cv_url: /uploads/resume.pdf
+
+  - block: engage-contact
+    id: contact
+    content:
+      username: admin
+
   - block: resume-footer
     content:
       username: admin

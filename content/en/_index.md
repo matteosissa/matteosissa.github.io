@@ -58,6 +58,19 @@ sections:
       view: article-grid
       columns: 2
 
+  - block: interactive-terminal
+    id: terminal
+    content:
+      title: Interactive Terminal
+      subtitle: Explore my profile the developer way — type a command or tap a shortcut.
+      username: admin
+      cv_url: /uploads/resume.pdf
+
+  - block: engage-contact
+    id: contact
+    content:
+      username: admin
+
   - block: resume-footer
     content:
       username: admin

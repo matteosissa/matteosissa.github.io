@@ -1,0 +1,162 @@
+{{/* Interactive Terminal block — lets visitors explore the profile via commands. */}}
+{{/* All data is derived at build time from the author page of the current language. */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := $block.content.username | default "admin" }}
+{{ $person_page := site.GetPage (printf "/authors/%s" $author) }}
+{{ $person := $person_page.Params }}
+{{ $lang := site.Language.Lang }}
+
+{{/* Localized UI strings */}}
+{{ $strings := dict
+  "en" (dict
+    "welcome" "Hi! I'm Matteo's website. Ask me anything about him."
+    "hint" "Type 'help' to see what I can do, or tap a shortcut below."
+    "notFound" "command not found:"
+    "tryHelp" "Type 'help' to list the available commands."
+    "helpHeader" "Available commands:"
+    "present" "Present"
+    "placeholder" "type a command…"
+    "msgUsage" "Usage: msg <your message>  — it lands straight in Matteo's inbox."
+    "msgSending" "Sending…"
+    "msgSent" "Delivered! Matteo will read it soon. Include an email or handle if you want a reply."
+    "msgFail" "Could not deliver — email me instead:"
+    "msgLimit" "Message limit reached for today — email me instead:"
+    "descs" (dict "about" "who I am" "skills" "technical skills" "experience" "work experience" "education" "academic background" "projects" "featured projects" "languages" "spoken languages" "contact" "how to reach me" "msg" "send me a message, e.g. msg Hi!" "cv" "open my CV" "clear" "clear the terminal")
+  )
+  "es" (dict
+    "welcome" "¡Hola! Soy la web de Matteo. Pregúntame lo que quieras sobre él."
+    "hint" "Escribe 'help' para ver qué puedo hacer, o pulsa un atajo abajo."
+    "notFound" "comando no encontrado:"
+    "tryHelp" "Escribe 'help' para ver los comandos disponibles."
+    "helpHeader" "Comandos disponibles:"
+    "present" "Actualidad"
+    "placeholder" "escribe un comando…"
+    "msgUsage" "Uso: msg <tu mensaje>  — llega directo a la bandeja de Matteo."
+    "msgSending" "Enviando…"
+    "msgSent" "¡Entregado! Matteo lo leerá pronto. Incluye un email si quieres respuesta."
+    "msgFail" "No se pudo entregar — escríbeme por email:"
+    "msgLimit" "Límite de mensajes alcanzado por hoy — escríbeme por email:"
+    "descs" (dict "about" "quién soy" "skills" "habilidades técnicas" "experience" "experiencia laboral" "education" "formación académica" "projects" "proyectos destacados" "languages" "idiomas" "contact" "cómo contactarme" "msg" "envíame un mensaje, ej. msg ¡Hola!" "cv" "abrir mi CV" "clear" "limpiar la terminal")
+  )
+  "it" (dict
+    "welcome" "Ciao! Sono il sito di Matteo. Chiedimi quello che vuoi su di lui."
+    "hint" "Digita 'help' per vedere cosa posso fare, oppure tocca una scorciatoia qui sotto."
+    "notFound" "comando non trovato:"
+    "tryHelp" "Digita 'help' per l'elenco dei comandi disponibili."
+    "helpHeader" "Comandi disponibili:"
+    "present" "Presente"
+    "placeholder" "digita un comando…"
+    "msgUsage" "Uso: msg <il tuo messaggio>  — arriva dritto nella casella di Matteo."
+    "msgSending" "Invio…"
+    "msgSent" "Consegnato! Matteo lo leggerà presto. Includi un'email se vuoi una risposta."
+    "msgFail" "Consegna non riuscita — scrivimi via email:"
+    "msgLimit" "Limite di messaggi raggiunto per oggi — scrivimi via email:"
+    "descs" (dict "about" "chi sono" "skills" "competenze tecniche" "experience" "esperienza lavorativa" "education" "percorso accademico" "projects" "progetti rilevanti" "languages" "lingue parlate" "contact" "come contattarmi" "msg" "inviami un messaggio, es. msg Ciao!" "cv" "apri il mio CV" "clear" "pulisci il terminale")
+  )
+}}
+{{ $ui := index $strings $lang | default (index $strings "en") }}
+{{ $present := index $ui "present" }}
+
+{{/* Skills (names only, grouped) */}}
+{{ $skills := slice }}
+{{ range $person.skills }}
+  {{ $items := slice }}
+  {{ range .items }}{{ $items = $items | append .name }}{{ end }}
+  {{ $skills = $skills | append (dict "group" .name "items" $items) }}
+{{ end }}
+
+{{/* Work experience */}}
+{{ $work := slice }}
+{{ range $person.work }}
+  {{ $start := "" }}{{ with .date_start }}{{ $start = time.Format "Jan 2006" (time.AsTime .) }}{{ end }}
+  {{ $end := $present }}{{ with .date_end }}{{ $end = time.Format "Jan 2006" (time.AsTime .) }}{{ end }}
+  {{ $work = $work | append (dict "title" (printf "%s — %s" .position (.company_name | default "")) "period" (printf "%s – %s" $start $end)) }}
+{{ end }}
+
+{{/* Education */}}
+{{ $education := slice }}
+{{ range $person.education }}
+  {{ $start := "" }}{{ with .date_start }}{{ $start = time.Format "Jan 2006" (time.AsTime .) }}{{ end }}
+  {{ $end := $present }}{{ with .date_end }}{{ $end = time.Format "Jan 2006" (time.AsTime .) }}{{ end }}
+  {{ $grade := "" }}{{ with .final_grade }}{{ $grade = . }}{{ end }}
+  {{ $education = $education | append (dict "title" (printf "%s — %s" .area .institution) "period" (printf "%s – %s" $start $end) "grade" $grade) }}
+{{ end }}
+
+{{/* Spoken languages */}}
+{{ $langs := slice }}
+{{ range $person.languages }}
+  {{ $desc := .description | default "" | markdownify | plainify }}
+  {{ $langs = $langs | append (printf "%s — %s" .name $desc) }}
+{{ end }}
+
+{{/* Contact links from profiles */}}
+{{ $contact := slice }}
+{{ $brand_names := dict "github" "GitHub" "linkedin" "LinkedIn" "at-symbol" "Email" "x" "X" "twitter" "Twitter" }}
+{{ range $person.profiles }}
+  {{ $base := path.Base .icon }}
+  {{ $label := .label | default (index $brand_names $base | default ($base | strings.Title)) }}
+  {{ $contact = $contact | append (dict "text" $label "url" (.url | default .link)) }}
+{{ end }}
+
+{{/* Projects of the current language */}}
+{{ $projects := slice }}
+{{ range where site.RegularPages "Section" "projects" }}
+  {{ $projects = $projects | append (dict "text" .Title "url" .RelPermalink) }}
+{{ end }}
+
+{{ $data := dict
+  "ui" $ui
+  "about" ($person_page.Plain | htmlUnescape | strings.TrimSpace)
+  "skills" $skills
+  "experience" $work
+  "education" $education
+  "languages" $langs
+  "contact" $contact
+  "projects" $projects
+  "cv" (dict "text" "resume.pdf" "url" ($block.content.cv_url | default "/uploads/resume.pdf"))
+}}
+
+<div class="px-4 sm:px-6">
+  <div class="max-w-3xl mx-auto">
+    {{ with $block.content.title }}
+      <h3 class="mb-3 text-3xl font-bold text-gray-900 dark:text-white text-center">{{ . }}</h3>
+    {{ end }}
+    {{ with $block.content.subtitle }}
+      <p class="mb-8 text-base text-gray-600 dark:text-gray-400 text-center">{{ . }}</p>
+    {{ end }}
+
+    <div class="msx-terminal" id="msx-terminal">
+      <div class="msx-term-header">
+        <span class="msx-dot msx-dot-r"></span>
+        <span class="msx-dot msx-dot-y"></span>
+        <span class="msx-dot msx-dot-g"></span>
+        <span class="msx-term-title">matteo@sissa: ~</span>
+      </div>
+      <div class="msx-term-body" id="msx-term-body" aria-live="polite">
+        <div class="msx-term-output" id="msx-term-output"></div>
+        <div class="msx-term-input-row">
+          <span class="msx-prompt" aria-hidden="true">➜&nbsp;~</span>
+          <input id="msx-term-input" class="msx-term-input" type="text"
+                 autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false"
+                 placeholder="{{ index $ui "placeholder" }}"
+                 aria-label="Terminal command input" />
+        </div>
+      </div>
+      <div class="msx-term-chips" id="msx-term-chips" role="toolbar" aria-label="Command shortcuts">
+        <button type="button" data-cmd="about">about</button>
+        <button type="button" data-cmd="skills">skills</button>
+        <button type="button" data-cmd="experience">experience</button>
+        <button type="button" data-cmd="education">education</button>
+        <button type="button" data-cmd="projects">projects</button>
+        <button type="button" data-cmd="languages">languages</button>
+        <button type="button" data-cmd="contact">contact</button>
+        <button type="button" data-cmd="cv">cv</button>
+      </div>
+    </div>
+
+    <script type="application/json" id="msx-terminal-data">{{ $data | jsonify | safeJS }}</script>
+  </div>
+</div>

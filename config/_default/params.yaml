@@ -57,3 +57,10 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+# Visitor engagement (reactions, quick messages, terminal msg command)
+# Create a free access key at https://web3forms.com with matteo.sissa.2001@gmail.com
+# and paste it below. Each visitor interaction then arrives as an email notification.
+# The key is designed to be public (it only allows sending TO your email).
+engagement:
+  web3forms_key: '9fe254ff-a97b-4fc6-a83b-156e5869caf3'

@@ -23,6 +23,9 @@ en:
       - name: Projects
         url: /#projects
         weight: 40
+      - name: Contact
+        url: /#contact
+        weight: 50
 
 # Italian
 it:
@@ -45,6 +48,9 @@ it:
       - name: Progetti
         url: /#projects
         weight: 40
+      - name: Contatti
+        url: /#contact
+        weight: 50
 
 # Spanish
 es:
@@ -67,4 +73,7 @@ es:
       - name: Proyectos
         url: /#projects
         weight: 40
+      - name: Contacto
+        url: /#contact
+        weight: 50
 
