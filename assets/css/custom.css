@@ -120,10 +120,11 @@
 
 /* MOBILE BIOGRAPHY SECTION CUSTOMIZATION */
 @media (max-width: 950px) {
+  /* Small top padding so the avatar's gradient ring clears the sticky header */
   .resume-biography {
-    padding-top: 0rem !important;
+    padding-top: 2rem !important;
   }
-  
+
   /* Avatar sizing */
   .avatar-wrapper {
     width: 265px !important;
